@@ -8,7 +8,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "generate-pdf": "node scripts/generate-pdf.js"
+    "generate-pdf": "node scripts/generate-pdf.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -20,15 +22,15 @@
   "bugs": {
     "url": "https://github.com/BhekumusaEric/My-Portfolio/issues"
   },
-  "homepage": "/",
+  "homepage": ".",
   "dependencies": {
+    "framer-motion": "^4.1.17",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "react-scripts": "4.0.3",
     "react-router-dom": "^5.3.0",
-    "three": "^0.135.0",
-    "framer-motion": "^4.1.17",
-    "styled-components": "^5.3.3"
+    "react-scripts": "4.0.3",
+    "styled-components": "^5.3.3",
+    "three": "^0.135.0"
   },
   "browserslist": {
     "production": [
@@ -41,5 +43,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "gh-pages": "^6.3.0"
   }
 }

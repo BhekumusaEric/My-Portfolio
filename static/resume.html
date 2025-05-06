@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhekumusa Eric Ntshwenya - CV</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #0969DA;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        .header h2 {
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            font-size: 14px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .main {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #0969DA;
+            border-bottom: 2px solid #0969DA;
+            padding-bottom: 5px;
+        }
+
+        .profile-summary {
+            margin-bottom: 20px;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .skill {
+            background-color: #e9f2fd;
+            color: #0969DA;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 14px;
+        }
+
+        .experience-item, .education-item, .project-item {
+            margin-bottom: 20px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+
+        .item-title {
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .item-subtitle {
+            font-weight: 500;
+            color: #555;
+            font-size: 15px;
+        }
+
+        .item-date {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .item-description {
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .item-bullets {
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+
+        .item-bullets li {
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+
+        .references {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .reference {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .reference-name {
+            font-weight: 600;
+        }
+
+        .reference-title {
+            font-style: italic;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .reference-contact {
+            font-size: 14px;
+        }
+
+        .print-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #0969DA;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                background-color: white;
+            }
+
+            .container {
+                box-shadow: none;
+            }
+
+            .print-button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>BHEKUMUSA ERIC NTSHWENYA</h1>
+            <h2>Software Developer | AI/ML Enthusiast</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📱</span>
+                    <span>+27 67 137 2148</span>
+                </div>
+                <div class="contact-item">
+                    <span>📧</span>
+                    <span>erickelvinntshwenya@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <span>🔗</span>
+                    <span>linkedin.com/in/bhekumusaerickelvinntshwenya</span>
+                </div>
+                <div class="contact-item">
+                    <span>💻</span>
+                    <span>github.com/BhekumusaEric</span>
+                </div>
+                <div class="contact-item">
+                    <span>📍</span>
+                    <span>Johannesburg, South Africa</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="section profile-summary">
+                <p>Dedicated software developer with a passion for AI/ML technologies and problem-solving. Experienced in developing innovative solutions that address real-world challenges. Currently pursuing software engineering education at WeThinkCode_ while building practical projects that demonstrate technical skills and creativity. Seeking opportunities to contribute to forward-thinking teams in the software development industry.</p>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">TECHNICAL SKILLS</h3>
+                <div class="skills-container">
+                    <span class="skill">Python</span>
+                    <span class="skill">JavaScript</span>
+                    <span class="skill">HTML/CSS</span>
+                    <span class="skill">React</span>
+                    <span class="skill">Django</span>
+                    <span class="skill">Flask</span>
+                    <span class="skill">SQL</span>
+                    <span class="skill">Machine Learning</span>
+                    <span class="skill">TensorFlow</span>
+                    <span class="skill">Azure</span>
+                    <span class="skill">Git</span>
+                    <span class="skill">RESTful APIs</span>
+                    <span class="skill">Blockchain</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">PROJECTS</h3>
+
+                <div class="project-item">
+                    <div class="item-header">
+                        <div class="item-title">SafeWayAI</div>
+                    </div>
+                    <div class="item-subtitle">AI-powered Emergency Detection Platform</div>
+                    <ul class="item-bullets">
+                        <li>Developed an AI-powered platform that provides safe routes to destinations and detects danger in real-time</li>
+                        <li>Integrated with Google Maps API and Firebase for real-time data processing</li>
+                        <li>Implemented machine learning algorithms to analyze route safety based on crime data</li>
+                        <li>Technologies: Python, Flet, Google Maps API, Firebase, Machine Learning</li>
+                    </ul>
+                </div>
+
+                <div class="project-item">
+                    <div class="item-header">
+                        <div class="item-title">Smart Loan Approval Predictor</div>
+                    </div>
+                    <div class="item-subtitle">Mobile Banking Application</div>
+                    <ul class="item-bullets">
+                        <li>Created a mobile application for loan applications with instant approval predictions using ML</li>
+                        <li>Designed and implemented user-friendly interfaces for data input and result visualization</li>
+                        <li>Built predictive models to analyze user data and determine loan eligibility</li>
+                        <li>Technologies: Python, Kivy, Machine Learning, SQLite</li>
+                    </ul>
+                </div>
+
+                <div class="project-item">
+                    <div class="item-header">
+                        <div class="item-title">Eduwize</div>
+                    </div>
+                    <div class="item-subtitle">AI-powered Learning Platform</div>
+                    <ul class="item-bullets">
+                        <li>Developed a learning platform that enhances student learning through personalized study material recommendations</li>
+                        <li>Implemented performance tracking and resource management features</li>
+                        <li>Integrated Azure Cognitive Services for content analysis and recommendation</li>
+                        <li>Technologies: Django, Azure Cognitive Services, Python, PostgreSQL</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">WORK EXPERIENCE</h3>
+
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title">Teacher / Tutor</div>
+                        <div class="item-date">Sep 2023 - Present</div>
+                    </div>
+                    <div class="item-subtitle">Central Johannesburg TVET College</div>
+                    <ul class="item-bullets">
+                        <li>Conducted training sessions on financial services including ATM assistance, money management, and bank teller operations</li>
+                        <li>Developed and delivered curriculum materials for financial literacy education</li>
+                        <li>Provided one-on-one tutoring to students struggling with financial concepts</li>
+                        <li>Assessed student progress and provided feedback for improvement</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title">Data Capturer</div>
+                        <div class="item-date">2020 (3-6 Months)</div>
+                    </div>
+                    <div class="item-subtitle">Believers Care Society Academy</div>
+                    <ul class="item-bullets">
+                        <li>Managed and processed large volumes of data with high accuracy</li>
+                        <li>Implemented data organization systems to improve efficiency</li>
+                        <li>Collaborated with team members to ensure data integrity</li>
+                        <li>Assisted with administrative tasks and record-keeping</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title">Technician</div>
+                        <div class="item-date">2019 (0-3 Months)</div>
+                    </div>
+                    <div class="item-subtitle">Book Dash</div>
+                    <ul class="item-bullets">
+                        <li>Provided technical support for events and operations</li>
+                        <li>Assisted with equipment setup and troubleshooting</li>
+                        <li>Collaborated with team members to ensure smooth event execution</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">EDUCATION</h3>
+
+                <div class="education-item">
+                    <div class="item-header">
+                        <div class="item-title">Software Engineering</div>
+                        <div class="item-date">2023 - Present</div>
+                    </div>
+                    <div class="item-subtitle">WeThinkCode_</div>
+                    <div class="item-description">Intensive software engineering program focusing on practical coding skills, problem-solving, and industry-relevant technologies.</div>
+                </div>
+
+                <div class="education-item">
+                    <div class="item-header">
+                        <div class="item-title">Information Technology and Computer Science (NQF Level 4)</div>
+                        <div class="item-date">Expected 2025</div>
+                    </div>
+                    <div class="item-subtitle">Central Johannesburg TVET College</div>
+                </div>
+
+                <div class="education-item">
+                    <div class="item-header">
+                        <div class="item-title">Office Administration (NQF Level 3)</div>
+                        <div class="item-date">2020</div>
+                    </div>
+                    <div class="item-subtitle">Believers Care Society Academy</div>
+                </div>
+
+                <div class="education-item">
+                    <div class="item-header">
+                        <div class="item-title">Grade 11</div>
+                        <div class="item-date">2017</div>
+                    </div>
+                    <div class="item-subtitle">City Rand College</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">CERTIFICATIONS & COURSES</h3>
+
+                <div class="education-item">
+                    <div class="item-header">
+                        <div class="item-title">ICT Courses</div>
+                        <div class="item-date">Aug 2023</div>
+                    </div>
+                    <ul class="item-bullets">
+                        <li>Help Desk Assistant</li>
+                        <li>Data Capturer</li>
+                        <li>Beginner Coder</li>
+                        <li>Call Centre Operator</li>
+                        <li>Computer Basics</li>
+                    </ul>
+                </div>
+
+                <div class="education-item">
+                    <div class="item-header">
+                        <div class="item-title">Hospitality & Tourism Courses</div>
+                        <div class="item-date">Sep 2023</div>
+                    </div>
+                    <ul class="item-bullets">
+                        <li>Waitron Basics</li>
+                        <li>Receptionist Basics</li>
+                        <li>Housekeeper</li>
+                        <li>Baggage Porter Basics</li>
+                        <li>Coffee Barista Basics</li>
+                        <li>Communication Skills</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">STRENGTHS & INTERESTS</h3>
+
+                <div class="skills-container">
+                    <span class="skill">Action-Oriented</span>
+                    <span class="skill">Logical Thinking</span>
+                    <span class="skill">Resourceful</span>
+                    <span class="skill">Problem Solving</span>
+                    <span class="skill">Adaptability</span>
+                    <span class="skill">Teamwork</span>
+                    <span class="skill">Outdoor Activities</span>
+                    <span class="skill">Music</span>
+                    <span class="skill">Writing</span>
+                    <span class="skill">AI Research</span>
+                    <span class="skill">Open Source</span>
+                    <span class="skill">Continuous Learning</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">LANGUAGES</h3>
+
+                <div class="skills-container">
+                    <span class="skill">English (Fluent)</span>
+                    <span class="skill">Swazi (Native)</span>
+                    <span class="skill">Zulu (Native)</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">REFERENCES</h3>
+
+                <div class="references">
+                    <div class="reference">
+                        <div class="reference-name">Mr. Alex Iheme</div>
+                        <div class="reference-title">Employer</div>
+                        <div class="reference-contact">📱 073 538 2855</div>
+                    </div>
+
+                    <div class="reference">
+                        <div class="reference-name">Ms. Julia Norr</div>
+                        <div class="reference-title">Employer</div>
+                        <div class="reference-contact">📱 074 464 5588</div>
+                    </div>
+
+                    <div class="reference">
+                        <div class="reference-name">Ms. Massana Mabitsela</div>
+                        <div class="reference-title">Teacher / Educator</div>
+                        <div class="reference-contact">📱 073 132 8146</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="print-button" onclick="window.print()">Print Resume</button>
+
+    <script>
+        // Add event listener for print button
+        document.addEventListener('DOMContentLoaded', function() {
+            const printButton = document.querySelector('.print-button');
+            printButton.addEventListener('click', function() {
+                window.print();
+            });
+        });
+    </script>
+</body>
+</html>
