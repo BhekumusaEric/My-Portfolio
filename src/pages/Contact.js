@@ -372,7 +372,7 @@ const Contact = () => {
                   boxShadow: '0 5px 15px rgba(0, 0, 0, 0.2)'
                 }}>
                   <img
-                    src="/images/54499080440_5b468ec2b6_o.jpg"
+                    src={process.env.PUBLIC_URL + "/images/54499080440_5b468ec2b6_o.jpg"}
                     alt="Bhekumusa Eric Ntshwenya"
                     style={{
                       width: '100%',

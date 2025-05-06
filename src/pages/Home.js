@@ -242,7 +242,7 @@ const Home = () => {
               position: 'relative'
             }}>
               <img
-                src="/images/54499080440_5b468ec2b6_o.jpg"
+                src={process.env.PUBLIC_URL + "/images/54499080440_5b468ec2b6_o.jpg"}
                 alt="Bhekumusa Eric Ntshwenya"
                 style={{
                   width: '100%',
