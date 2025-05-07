@@ -95,7 +95,7 @@
 
 /* 3D Coin Rotation Effect */
 .coin-rotate {
-  animation: rotate3d 4s linear infinite;
+  animation: rotate3d 20s linear infinite;
   transform-style: preserve-3d;
   border-radius: 50%;
   box-shadow: 0 0 20px rgba(9, 105, 218, 0.5);
