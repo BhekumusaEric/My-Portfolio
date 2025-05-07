@@ -365,19 +365,25 @@ const Contact = () => {
               transition={{ duration: 0.5 }}
             >
               <InfoCard>
-                <div style={{
-                  borderRadius: '12px',
+                <div className="coin-container" style={{
+                  borderRadius: '50%',
                   overflow: 'hidden',
                   marginBottom: '1.5rem',
-                  boxShadow: '0 5px 15px rgba(0, 0, 0, 0.2)'
+                  boxShadow: '0 5px 15px rgba(0, 0, 0, 0.2)',
+                  width: '200px',
+                  height: '200px',
+                  margin: '0 auto 1.5rem'
                 }}>
                   <img
                     src={process.env.PUBLIC_URL + "./images/54499080440_5b468ec2b6_o.jpg"}
                     alt="Bhekumusa Eric Ntshwenya"
+                    className="coin-rotate"
                     style={{
                       width: '100%',
-                      height: 'auto',
-                      display: 'block'
+                      height: '100%',
+                      objectFit: 'cover',
+                      objectPosition: 'center',
+                      borderRadius: '50%'
                     }}
                   />
                 </div>

@@ -202,19 +202,25 @@ const About = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <div className="glass-effect" style={{
+              <div className="glass-effect coin-container" style={{
                 marginBottom: '2rem',
-                borderRadius: '12px',
+                borderRadius: '50%',
                 overflow: 'hidden',
-                boxShadow: '0 10px 30px rgba(0, 0, 0, 0.2)'
+                boxShadow: '0 10px 30px rgba(0, 0, 0, 0.2)',
+                width: '250px',
+                height: '250px',
+                margin: '0 auto 2rem'
               }}>
                 <img
                   src={process.env.PUBLIC_URL + "./images/54499080440_5b468ec2b6_o.jpg"}
                   alt="Bhekumusa Eric Ntshwenya"
+                  className="coin-rotate"
                   style={{
                     width: '100%',
-                    height: 'auto',
-                    display: 'block'
+                    height: '100%',
+                    objectFit: 'cover',
+                    objectPosition: 'center',
+                    borderRadius: '50%'
                   }}
                 />
               </div>

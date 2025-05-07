@@ -231,10 +231,10 @@ const Home = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <div className="glass-effect" style={{
+            <div className="glass-effect coin-container" style={{
               width: '100%',
               height: '100%',
-              borderRadius: '20px',
+              borderRadius: '50%',
               overflow: 'hidden',
               display: 'flex',
               alignItems: 'center',
@@ -244,16 +244,14 @@ const Home = () => {
               <img
                 src={process.env.PUBLIC_URL + "./images/54499080440_5b468ec2b6_o.jpg"}
                 alt="Bhekumusa Eric Ntshwenya"
+                className="coin-rotate"
                 style={{
                   width: '100%',
                   height: '100%',
                   objectFit: 'cover',
                   objectPosition: 'center',
-                  borderRadius: '20px',
-                  transition: 'transform 0.5s ease'
+                  borderRadius: '50%'
                 }}
-                onMouseOver={(e) => e.target.style.transform = 'scale(1.05)'}
-                onMouseOut={(e) => e.target.style.transform = 'scale(1)'}
               />
             </div>
           </HeroVisual>
