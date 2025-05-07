@@ -33,6 +33,7 @@ const ProjectImage = styled.div`
   justify-content: center;
   transition: transform 0.5s ease;
   transform: ${props => props.hovered ? 'scale(1.05)' : 'scale(1)'};
+  position: relative;
 `;
 
 const ProjectInitial = styled.div`
@@ -45,6 +46,20 @@ const ProjectPreview = styled.div`
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.5);
   margin-top: 0.5rem;
+`;
+
+const ProjectImageOverlay = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: ${props => props.hovered ? '0' : '1'};
+  transition: opacity 0.3s ease;
 `;
 
 const ProjectTitle = styled.h3`
@@ -90,7 +105,7 @@ const CardLink = styled.a`
   align-items: center;
   gap: 0.5rem;
   transition: all 0.3s ease;
-  
+
   &:hover {
     text-decoration: underline;
   }
@@ -99,42 +114,42 @@ const CardLink = styled.a`
 const ProjectCard = ({ project }) => {
   const [hovered, setHovered] = useState(false);
   const cardRef = useRef(null);
-  
+
   // Mouse position for 3D effect
   const x = useMotionValue(0);
   const y = useMotionValue(0);
-  
+
   // Smooth out the mouse movement
   const springX = useSpring(x, { stiffness: 150, damping: 15 });
   const springY = useSpring(y, { stiffness: 150, damping: 15 });
-  
+
   // Transform mouse position into rotation values
   const rotateX = useTransform(springY, [-0.5, 0.5], [10, -10]);
   const rotateY = useTransform(springX, [-0.5, 0.5], [-10, 10]);
-  
+
   // Handle mouse move for 3D effect
   const handleMouseMove = (e) => {
     if (!cardRef.current) return;
-    
+
     const rect = cardRef.current.getBoundingClientRect();
     const width = rect.width;
     const height = rect.height;
-    
+
     // Calculate normalized mouse position
     const xValue = (e.clientX - rect.left) / width - 0.5;
     const yValue = (e.clientY - rect.top) / height - 0.5;
-    
+
     x.set(xValue);
     y.set(yValue);
   };
-  
+
   // Reset card position when mouse leaves
   const handleMouseLeave = () => {
     x.set(0);
     y.set(0);
     setHovered(false);
   };
-  
+
   return (
     <Card
       ref={cardRef}
@@ -149,24 +164,38 @@ const ProjectCard = ({ project }) => {
     >
       <CardContent>
         <ProjectImage hovered={hovered}>
-          <div className="text-center">
-            <ProjectInitial>{project.title.charAt(0)}</ProjectInitial>
-            <ProjectPreview>Project Preview</ProjectPreview>
-          </div>
+          {project.image ? (
+            <img
+              src={process.env.PUBLIC_URL + project.image}
+              alt={project.title}
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            />
+          ) : (
+            <div className="text-center">
+              <ProjectInitial>{project.title.charAt(0)}</ProjectInitial>
+              <ProjectPreview>Project Preview</ProjectPreview>
+            </div>
+          )}
+          <ProjectImageOverlay hovered={hovered}>
+            <div className="text-center">
+              <ProjectInitial>{project.title.charAt(0)}</ProjectInitial>
+              <ProjectPreview>Click to view details</ProjectPreview>
+            </div>
+          </ProjectImageOverlay>
         </ProjectImage>
-        
+
         <ProjectTitle className="gradient-text">{project.title}</ProjectTitle>
         <ProjectDescription>{project.description}</ProjectDescription>
-        
+
         <TechStack>
           {project.technologies.map((tech, index) => (
             <TechTag key={index}>{tech}</TechTag>
           ))}
         </TechStack>
-        
+
         <CardLinks>
           {project.github && (
-            <CardLink 
+            <CardLink
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
@@ -177,10 +206,25 @@ const ProjectCard = ({ project }) => {
               Code
             </CardLink>
           )}
-          
+
+          {project.demo && (
+            <CardLink
+              href={project.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: '#4CAF50' }}
+            >
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M15.5 2.25a.75.75 0 01.75-.75h5.5a.75.75 0 01.75.75v5.5a.75.75 0 01-1.5 0V4.06l-6.22 6.22a.75.75 0 11-1.06-1.06L19.94 3h-3.69a.75.75 0 01-.75-.75z" />
+                <path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 010 1.5h-8.5a.25.25 0 00-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 00.25-.25v-8.5a.75.75 0 011.5 0v8.5a1.75 1.75 0 01-1.75 1.75H4.25a1.75 1.75 0 01-1.75-1.75V4.25z" />
+              </svg>
+              Demo
+            </CardLink>
+          )}
+
           <Link to={`/projects/${project.slug}`}>
             <CardLink as="span">
-              View Details
+              Details
               <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>

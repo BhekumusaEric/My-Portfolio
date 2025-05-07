@@ -51,10 +51,10 @@ const FilterButton = styled.button`
   cursor: pointer;
   transition: all 0.3s ease;
   border: none;
-  
+
   background-color: ${props => props.active ? 'var(--primary-color)' : 'rgba(31, 34, 46, 0.7)'};
   color: ${props => props.active ? 'white' : '#a0a0a0'};
-  
+
   &:hover {
     background-color: ${props => props.active ? 'var(--primary-color)' : 'rgba(31, 34, 46, 0.9)'};
   }
@@ -67,11 +67,11 @@ const ProjectsGrid = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem 5rem;
-  
+
   @media (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   @media (min-width: 1200px) {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -97,7 +97,7 @@ const EmptyDescription = styled.p`
 `;
 
 // Projects data
-const allProjects = [
+export const allProjects = [
   {
     id: 1,
     title: 'SafeWayAI',
@@ -105,7 +105,9 @@ const allProjects = [
     description: 'AI-powered emergency detection platform that provides safe routes to destinations, detects danger in real-time, and allows users to report incidents. The app integrates with Google Maps and uses real crime data to analyze route safety.',
     technologies: ['Python', 'Flet', 'Google Maps API', 'Firebase', 'Machine Learning'],
     category: 'AI/ML',
-    github: 'https://github.com/BhekumusaEric/MSAIskillshackathon'
+    github: 'https://github.com/BhekumusaEric/MSAIskillshackathon',
+    demo: 'https://github.com/BhekumusaEric/MSAIskillshackathon',
+    image: './images/projects/safeway-ai.jpg'
   },
   {
     id: 2,
@@ -114,7 +116,9 @@ const allProjects = [
     description: 'A mobile application for Eric Bank System that allows users to apply for loans and get instant approval predictions using machine learning. The app analyzes user data to determine loan eligibility.',
     technologies: ['Python', 'Kivy', 'Machine Learning', 'SQLite'],
     category: 'AI/ML',
-    github: 'https://github.com/BhekumusaEric/Smart-Loan-Approval-Predictor'
+    github: 'https://github.com/BhekumusaEric/Smart-Loan-Approval-Predictor',
+    demo: 'https://github.com/BhekumusaEric/Smart-Loan-Approval-Predictor',
+    image: './images/projects/loan-approval.jpg'
   },
   {
     id: 3,
@@ -123,7 +127,9 @@ const allProjects = [
     description: 'AI-powered learning platform designed to enhance student learning through personalized study material recommendations, quizzes with performance tracking, and resource management.',
     technologies: ['Django', 'Azure Cognitive Services', 'Python', 'PostgreSQL'],
     category: 'Web Development',
-    github: 'https://github.com/BhekumusaEric/Eduwize'
+    github: 'https://github.com/BhekumusaEric/Eduwize',
+    demo: 'https://github.com/BhekumusaEric/Eduwize',
+    image: './images/projects/eduwize.jpg'
   },
   {
     id: 4,
@@ -132,7 +138,9 @@ const allProjects = [
     description: 'A personal website for a mobile repair shop, showcasing services and allowing customers to book repairs online.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     category: 'Web Development',
-    github: 'https://github.com/BhekumusaEric/myphonerepairwebsite'
+    github: 'https://github.com/BhekumusaEric/myphonerepairwebsite',
+    demo: 'https://bhekumusaeric.github.io/myphonerepairwebsite/',
+    image: './images/projects/phone-repair.jpg'
   },
   {
     id: 5,
@@ -141,7 +149,9 @@ const allProjects = [
     description: 'Ethereum blockchain project aimed at ensuring complete transparency in charity transactions. Integrates a solidity contract with a metamask wallet on Ganache interfaced accounts and deployment using Node.js.',
     technologies: ['Blockchain', 'Solidity', 'Ethereum', 'Node.js'],
     category: 'Blockchain',
-    github: 'https://github.com/BhekumusaEric/CharityBlockchain'
+    github: 'https://github.com/BhekumusaEric/CharityBlockchain',
+    demo: 'https://github.com/BhekumusaEric/CharityBlockchain',
+    image: './images/projects/charity-blockchain.jpg'
   },
   {
     id: 6,
@@ -150,23 +160,25 @@ const allProjects = [
     description: 'A blockchain-based workflow tool for efficient and transparent project management.',
     technologies: ['Blockchain', 'JavaScript', 'React'],
     category: 'Blockchain',
-    github: 'https://github.com/BhekumusaEric/TruBudget'
+    github: 'https://github.com/BhekumusaEric/TruBudget',
+    demo: 'https://github.com/BhekumusaEric/TruBudget',
+    image: './images/projects/trubudget.jpg'
   }
 ];
 
 const Projects = () => {
   const [filter, setFilter] = useState('All');
   const categories = ['All', 'AI/ML', 'Web Development', 'Blockchain'];
-  
+
   // Filter projects based on selected category
-  const filteredProjects = filter === 'All' 
-    ? allProjects 
+  const filteredProjects = filter === 'All'
+    ? allProjects
     : allProjects.filter(project => project.category === filter);
-  
+
   return (
     <ProjectsContainer>
       <StarfieldAnimation />
-      
+
       <PageHeader>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -180,7 +192,7 @@ const Projects = () => {
           </PageDescription>
         </motion.div>
       </PageHeader>
-      
+
       <FilterContainer>
         {categories.map((category, index) => (
           <motion.div
@@ -189,7 +201,7 @@ const Projects = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3, delay: index * 0.1 }}
           >
-            <FilterButton 
+            <FilterButton
               active={filter === category}
               onClick={() => setFilter(category)}
             >
@@ -198,7 +210,7 @@ const Projects = () => {
           </motion.div>
         ))}
       </FilterContainer>
-      
+
       <ProjectsGrid>
         {filteredProjects.length > 0 ? (
           filteredProjects.map((project, index) => (

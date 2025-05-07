@@ -163,7 +163,9 @@ const featuredProjects = [
     slug: 'safeway-ai',
     description: 'AI-powered emergency detection platform that provides safe routes to destinations and detects danger in real-time.',
     technologies: ['Python', 'Flet', 'Google Maps API', 'Firebase'],
-    github: 'https://github.com/BhekumusaEric/MSAIskillshackathon'
+    github: 'https://github.com/BhekumusaEric/MSAIskillshackathon',
+    demo: 'https://github.com/BhekumusaEric/MSAIskillshackathon',
+    image: './images/projects/safeway-ai.jpg'
   },
   {
     id: 2,
@@ -171,7 +173,9 @@ const featuredProjects = [
     slug: 'smart-loan-approval',
     description: 'Mobile application for Eric Bank System that allows users to apply for loans and get instant approval predictions using ML.',
     technologies: ['Python', 'Kivy', 'Machine Learning'],
-    github: 'https://github.com/BhekumusaEric/Smart-Loan-Approval-Predictor'
+    github: 'https://github.com/BhekumusaEric/Smart-Loan-Approval-Predictor',
+    demo: 'https://github.com/BhekumusaEric/Smart-Loan-Approval-Predictor',
+    image: './images/projects/loan-approval.jpg'
   },
   {
     id: 3,
@@ -179,7 +183,9 @@ const featuredProjects = [
     slug: 'eduwize',
     description: 'AI-powered learning platform designed to enhance student learning through personalized study material recommendations.',
     technologies: ['Django', 'Azure Cognitive Services', 'Python'],
-    github: 'https://github.com/BhekumusaEric/Eduwize'
+    github: 'https://github.com/BhekumusaEric/Eduwize',
+    demo: 'https://github.com/BhekumusaEric/Eduwize',
+    image: './images/projects/eduwize.jpg'
   }
 ];
 
