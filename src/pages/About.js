@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import StarfieldAnimation from '../components/StarfieldAnimation';
+import AchievementBadges from '../components/AchievementBadges'; // Added to showcase achievements
+import ExperienceTimeline from '../components/ExperienceTimeline'; // Professional journey timeline
 
 const AboutContainer = styled.div`
   position: relative;
@@ -141,16 +143,19 @@ const SkillItem = styled.li`
 `;
 
 const About = () => {
-  // Skills data
+  // Enhanced skills data - Updated to reflect recent skill expansion and achievements
+  // This showcases the developer's comprehensive technical capabilities and professional growth
   const skills = {
     technical: [
-      'Python', 'JavaScript', 'React', 'Django', 'Flask',
-      'TensorFlow', 'Machine Learning', 'Data Analysis',
-      'Azure', 'Git', 'HTML/CSS'
+      'Python', 'JavaScript', 'Java', 'C#', 'React', 'Django', 'Flask',
+      'TensorFlow', 'Machine Learning', 'Neural Networks', 'Data Analysis',
+      'AWS', 'Azure', 'Cloud Computing', 'Git', 'HTML/CSS', 'Blockchain',
+      'Data Science', 'AI Development', 'Full-Stack Development'
     ],
     soft: [
-      'Problem Solving', 'Communication', 'Teamwork',
-      'Adaptability', 'Time Management', 'Critical Thinking'
+      'Problem Solving', 'Communication', 'Teamwork', 'Leadership',
+      'Adaptability', 'Time Management', 'Critical Thinking',
+      'Competitive Programming', 'Innovation', 'Project Management'
     ]
   };
 
@@ -182,16 +187,19 @@ const About = () => {
             >
               <SectionTitle className="gradient-text">My Story</SectionTitle>
               <Paragraph>
-                I'm Bhekumusa Eric Ntshwenya, a passionate software developer with a focus on AI and machine learning technologies. My journey in tech began with a curiosity about how software could solve real-world problems and make people's lives better.
+                I'm Bhekumusa Eric Ntshwenya, a passionate software developer and hackathon winner with expertise spanning AI/ML, web development, and enterprise programming. My journey in tech began with curiosity about solving real-world problems and has evolved into a proven track record of innovative solutions and competitive success.
               </Paragraph>
               <Paragraph>
-                Currently studying at WeThinkCode_, I'm constantly expanding my knowledge and skills in software development. I have a particular interest in artificial intelligence and its applications across different industries.
+                Currently studying at WeThinkCode_, I've recently expanded my technical arsenal to include Java and C# development, adding enterprise-level programming capabilities to my existing expertise in Python, JavaScript, and AI technologies. This expansion reflects my commitment to staying current with industry demands and versatile problem-solving approaches.
               </Paragraph>
               <Paragraph>
-                What drives me is the opportunity to create innovative solutions that have a meaningful impact. Whether it's developing an AI-powered safety app or building a machine learning model to predict loan approvals, I'm always looking for ways to leverage technology for good.
+                My recent victory in the prestigious Sappas hackathon demonstrates my ability to innovate under pressure and deliver exceptional results in competitive environments. This achievement, combined with my growing portfolio of AI-powered applications like SafeWayAI and NeuroStrike, showcases my capability to transform complex ideas into practical, impactful solutions.
               </Paragraph>
               <Paragraph>
-                When I'm not coding, I enjoy learning about new technologies, contributing to open-source projects, and sharing my knowledge with others in the tech community.
+                What drives me is the intersection of cutting-edge technology and meaningful impact. Whether developing cloud-based data processing systems on AWS, creating neural network implementations, or building full-stack web applications, I'm passionate about leveraging diverse technologies to create solutions that matter. My work spans from AI safety applications to enterprise development frameworks, reflecting both technical depth and breadth.
+              </Paragraph>
+              <Paragraph>
+                Beyond coding, I'm committed to continuous learning and professional growth. My recent certifications in cloud computing and expansion into Java and C# development demonstrate my dedication to staying at the forefront of technology trends and industry best practices.
               </Paragraph>
             </motion.div>
           </Column>
@@ -234,7 +242,17 @@ const About = () => {
 
               <InfoCard>
                 <InfoTitle>Focus Areas</InfoTitle>
-                <InfoContent>AI/ML Development, Web Development, Mobile Apps</InfoContent>
+                <InfoContent>AI/ML Development, Enterprise Java/C#, Cloud Computing, Full-Stack Development</InfoContent>
+              </InfoCard>
+
+              <InfoCard>
+                <InfoTitle>Recent Achievement</InfoTitle>
+                <InfoContent>🏆 Sappas Hackathon Winner 2024</InfoContent>
+              </InfoCard>
+
+              <InfoCard>
+                <InfoTitle>Programming Languages</InfoTitle>
+                <InfoContent>Python, JavaScript, Java, C#, SQL</InfoContent>
               </InfoCard>
 
               <InfoCard>
@@ -243,9 +261,20 @@ const About = () => {
               </InfoCard>
 
               <InfoCard>
-                <InfoTitle>Interests</InfoTitle>
-                <InfoContent>AI Research, Open Source, Continuous Learning</InfoContent>
+                <InfoTitle>Certifications</InfoTitle>
+                <InfoContent>SAP Tech Consultant, Cisco CCNA, Cisco IT Essentials A+, Java & C# Certified</InfoContent>
               </InfoCard>
+
+              <InfoCard>
+                <InfoTitle>Interests</InfoTitle>
+                <InfoContent>AI Research, Competitive Programming, Open Source, Cloud Architecture</InfoContent>
+              </InfoCard>
+
+              {/* Achievement Badges - Visual representation of major accomplishments */}
+              <div style={{ marginTop: '2rem' }}>
+                <InfoTitle style={{ textAlign: 'center', marginBottom: '1rem' }}>Major Achievements</InfoTitle>
+                <AchievementBadges />
+              </div>
             </motion.div>
           </Column>
         </SectionContent>
@@ -280,6 +309,23 @@ const About = () => {
                 </SkillsList>
               </SkillCategory>
             </SkillsContainer>
+          </motion.div>
+        </SectionContent>
+      </Section>
+
+      {/* Professional Experience Timeline - New section showcasing career progression */}
+      <Section>
+        <SectionContent>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            style={{ width: '100%' }}
+          >
+            <SectionTitle className="gradient-text" style={{ textAlign: 'center', marginBottom: '3rem' }}>
+              Professional Journey
+            </SectionTitle>
+            <ExperienceTimeline />
           </motion.div>
         </SectionContent>
       </Section>

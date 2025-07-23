@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import StarfieldAnimation from '../components/StarfieldAnimation';
 import ProjectCard from '../components/ProjectCard';
+import AchievementBadges from '../components/AchievementBadges'; // Showcase achievements on home page
 
 const HomeContainer = styled.div`
   position: relative;
@@ -209,7 +210,14 @@ const Home = () => {
             </HeroSubtitle>
             <HeroDescription>
               I build intelligent solutions that solve real-world problems. Specializing in AI, machine learning, and web development.
+              🏆 Recent Sappas Hackathon Winner with expertise in Java, C#, and cloud technologies.
             </HeroDescription>
+
+            {/* Achievement Badges - Prominently display major accomplishments */}
+            <div style={{ margin: '2rem 0' }}>
+              <AchievementBadges />
+            </div>
+
             <ButtonGroup>
               <Link to="/projects">
                 <motion.button

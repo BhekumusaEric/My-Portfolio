@@ -96,7 +96,8 @@ const EmptyDescription = styled.p`
   margin: 0 auto;
 `;
 
-// Projects data
+// Enhanced Projects data - Updated to include recent work and expanded skill set
+// This showcases the developer's growth and diverse technical capabilities
 export const allProjects = [
   {
     id: 1,
@@ -163,12 +164,80 @@ export const allProjects = [
     github: 'https://github.com/BhekumusaEric/TruBudget',
     demo: 'https://github.com/BhekumusaEric/TruBudget',
     image: './images/projects/trubudget.jpg'
+  },
+  // NEW PROJECTS - Recent work showcasing expanded skill set
+  {
+    id: 7,
+    title: 'TrainJava',
+    slug: 'train-java',
+    description: 'Java training and practice repository showcasing object-oriented programming concepts, data structures, and algorithms. Demonstrates proficiency in Java development and enterprise programming patterns.',
+    technologies: ['Java', 'OOP', 'Data Structures', 'Algorithms'],
+    category: 'Java Development',
+    github: 'https://github.com/BhekumusaEric/TrainJava',
+    demo: 'https://github.com/BhekumusaEric/TrainJava',
+    image: './images/projects/train-java.jpg'
+  },
+  {
+    id: 8,
+    title: 'QuickStats',
+    slug: 'quickstats',
+    description: 'Statistical analysis and data visualization tool for quick insights. Features data processing capabilities and interactive charts for business intelligence and data-driven decision making.',
+    technologies: ['Python', 'Data Analysis', 'Visualization', 'Statistics'],
+    category: 'Data Science',
+    github: 'https://github.com/BhekumusaEric/QuickStats',
+    demo: 'https://github.com/BhekumusaEric/QuickStats',
+    image: './images/projects/quickstats.jpg'
+  },
+  {
+    id: 9,
+    title: 'AWS Data Code',
+    slug: 'aws-data-code',
+    description: 'Cloud-based data processing and analytics solution built on AWS infrastructure. Demonstrates cloud computing expertise and scalable data pipeline development.',
+    technologies: ['AWS', 'Python', 'Cloud Computing', 'Data Processing'],
+    category: 'Cloud Development',
+    github: 'https://github.com/BhekumusaEric/aws_data_code',
+    demo: 'https://github.com/BhekumusaEric/aws_data_code',
+    image: './images/projects/aws-data.jpg'
+  },
+  {
+    id: 10,
+    title: 'NeuroStrike',
+    slug: 'neurostrike',
+    description: 'Advanced neural network implementation for pattern recognition and machine learning applications. Showcases deep learning expertise and AI model development capabilities.',
+    technologies: ['Python', 'Neural Networks', 'Deep Learning', 'AI'],
+    category: 'AI/ML',
+    github: 'https://github.com/BhekumusaEric/NeuroStrike',
+    demo: 'https://github.com/BhekumusaEric/NeuroStrike',
+    image: './images/projects/neurostrike.jpg'
+  },
+  {
+    id: 11,
+    title: 'HYDRA',
+    slug: 'hydra',
+    description: 'Multi-purpose development framework and toolkit. Demonstrates advanced software architecture and system design capabilities with modular and scalable components.',
+    technologies: ['Python', 'Framework Development', 'System Design', 'Architecture'],
+    category: 'Framework',
+    github: 'https://github.com/BhekumusaEric/HYDRA',
+    demo: 'https://github.com/BhekumusaEric/HYDRA',
+    image: './images/projects/hydra.jpg'
+  },
+  {
+    id: 12,
+    title: 'AdmissionApply',
+    slug: 'admission-apply',
+    description: 'Application platform designed to help students apply for educational opportunities. Features user management, application tracking, and automated processing workflows.',
+    technologies: ['Web Development', 'Database Management', 'User Authentication', 'Workflow Automation'],
+    category: 'Web Development',
+    github: 'https://github.com/BhekumusaEric/AdmissionApply',
+    demo: 'https://github.com/BhekumusaEric/AdmissionApply',
+    image: './images/projects/admission-apply.jpg'
   }
 ];
 
 const Projects = () => {
   const [filter, setFilter] = useState('All');
-  const categories = ['All', 'AI/ML', 'Web Development', 'Blockchain'];
+  // Updated categories to reflect expanded project portfolio and skill diversity
+  const categories = ['All', 'AI/ML', 'Web Development', 'Blockchain', 'Java Development', 'Data Science', 'Cloud Development', 'Framework'];
 
   // Filter projects based on selected category
   const filteredProjects = filter === 'All'

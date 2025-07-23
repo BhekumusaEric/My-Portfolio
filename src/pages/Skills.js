@@ -185,16 +185,19 @@ const LearningItem = styled.li`
 `;
 
 const Skills = () => {
-  // Technical skills data
+  // Technical skills data - Updated to include Java and C# as per recent skill expansion
+  // These skills reflect the developer's growing expertise in enterprise-level programming languages
   const technicalSkills = [
     {
       category: 'Programming Languages',
       skills: [
-        { name: 'Python', level: 95, color: '#3776AB' },
-        { name: 'JavaScript', level: 85, color: '#F7DF1E' },
-        { name: 'HTML', level: 90, color: '#E34F26' },
-        { name: 'CSS', level: 85, color: '#1572B6' },
-        { name: 'SQL', level: 80, color: '#4479A1' },
+        { name: 'Python', level: 95, color: '#3776AB' }, // Primary language - highest proficiency
+        { name: 'JavaScript', level: 85, color: '#F7DF1E' }, // Strong web development skills
+        { name: 'Java', level: 80, color: '#ED8B00' }, // Recently added - enterprise development
+        { name: 'C#', level: 75, color: '#239120' }, // Recently added - .NET development
+        { name: 'HTML', level: 90, color: '#E34F26' }, // Web markup expertise
+        { name: 'CSS', level: 85, color: '#1572B6' }, // Styling and responsive design
+        { name: 'SQL', level: 80, color: '#4479A1' }, // Database management
       ]
     },
     {
@@ -221,10 +224,20 @@ const Skills = () => {
       category: 'Tools & Technologies',
       skills: [
         { name: 'Git & GitHub', level: 90, color: '#F05032' },
-        { name: 'Azure', level: 75, color: '#0078D4' },
+        { name: 'SAP', level: 80, color: '#0FAAFF' },
         { name: 'Docker', level: 70, color: '#2496ED' },
         { name: 'VS Code', level: 95, color: '#007ACC' },
         { name: 'Linux', level: 80, color: '#FCC624' },
+      ]
+    },
+    {
+      category: 'Networking & Infrastructure',
+      skills: [
+        { name: 'Cisco CCNA', level: 85, color: '#1BA0D7' },
+        { name: 'Network Security', level: 80, color: '#FF5722' },
+        { name: 'Routing & Switching', level: 85, color: '#1BA0D7' },
+        { name: 'IT Troubleshooting', level: 90, color: '#4CAF50' },
+        { name: 'Network Administration', level: 80, color: '#9C27B0' },
       ]
     }
   ];
@@ -257,19 +270,24 @@ const Skills = () => {
     },
   ];
   
-  // Learning data
+  // Learning data - Updated to reflect current skill expansion and future goals
+  // This section showcases continuous learning mindset and adaptation to industry trends
   const learning = {
     current: [
-      'Advanced Deep Learning Techniques',
-      'Cloud Architecture on Azure',
-      'Blockchain Development',
-      'Next.js and Modern React Patterns'
+      'Advanced Java Enterprise Development', // Currently expanding Java skills
+      'C# and .NET Framework Mastery', // Recently added to toolkit
+      'Advanced Deep Learning Techniques', // Continuing AI/ML expertise
+      'Cloud Architecture on Azure', // Cloud computing focus
+      'Blockchain Development', // Emerging technology interest
+      'Next.js and Modern React Patterns' // Frontend advancement
     ],
     future: [
-      'Quantum Computing',
-      'Augmented Reality Development',
-      'Edge Computing and IoT',
-      'Advanced Natural Language Processing'
+      'Spring Boot and Microservices', // Java ecosystem expansion
+      'ASP.NET Core Development', // C# web development
+      'Quantum Computing', // Cutting-edge technology
+      'Augmented Reality Development', // Immersive tech
+      'Edge Computing and IoT', // Distributed systems
+      'Advanced Natural Language Processing' // AI specialization
     ]
   };
   

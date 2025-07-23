@@ -105,11 +105,15 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
   
+  // Updated navigation links to include new portfolio sections
+  // Added Certifications and Achievements to showcase expanded accomplishments
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Projects', path: '/projects' },
     { name: 'Skills', path: '/skills' },
+    { name: 'Certifications', path: '/certifications' }, // New: Professional certifications
+    { name: 'Achievements', path: '/achievements' }, // New: Hackathon wins and recognition
     { name: 'Contact', path: '/contact' },
   ];
   
