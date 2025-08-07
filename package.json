@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/BhekumusaEric/My-Portfolio/issues"
   },
-  "homepage": "https://bhekumusaeric.github.io/My-Portfolio",
+  "homepage": ".",
   "dependencies": {
     "framer-motion": "^4.1.17",
     "react": "^16.14.0",
