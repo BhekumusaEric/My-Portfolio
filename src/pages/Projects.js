@@ -108,7 +108,7 @@ export const allProjects = [
     category: 'AI/ML',
     github: 'https://github.com/BhekumusaEric/MSAIskillshackathon',
     demo: 'https://github.com/BhekumusaEric/MSAIskillshackathon',
-    image: './images/projects/safeway-ai.jpg'
+    image: '/images/projects/safeway-ai.jpg'
   },
   {
     id: 2,
@@ -119,7 +119,7 @@ export const allProjects = [
     category: 'AI/ML',
     github: 'https://github.com/BhekumusaEric/Smart-Loan-Approval-Predictor',
     demo: 'https://github.com/BhekumusaEric/Smart-Loan-Approval-Predictor',
-    image: './images/projects/loan-approval.jpg'
+    image: '/images/projects/loan-approval.jpg'
   },
   {
     id: 3,
@@ -130,7 +130,7 @@ export const allProjects = [
     category: 'Web Development',
     github: 'https://github.com/BhekumusaEric/Eduwize',
     demo: 'https://github.com/BhekumusaEric/Eduwize',
-    image: './images/projects/eduwize.jpg'
+    image: '/images/projects/eduwize.jpg'
   },
   {
     id: 4,
@@ -141,7 +141,7 @@ export const allProjects = [
     category: 'Web Development',
     github: 'https://github.com/BhekumusaEric/myphonerepairwebsite',
     demo: 'https://bhekumusaeric.github.io/myphonerepairwebsite/',
-    image: './images/projects/phone-repair.jpg'
+    image: '/images/projects/phone-repair.jpg'
   },
   {
     id: 5,
@@ -152,7 +152,7 @@ export const allProjects = [
     category: 'Blockchain',
     github: 'https://github.com/BhekumusaEric/CharityBlockchain',
     demo: 'https://github.com/BhekumusaEric/CharityBlockchain',
-    image: './images/projects/charity-blockchain.jpg'
+    image: '/images/projects/charity-blockchain.jpg'
   },
   {
     id: 6,
@@ -163,7 +163,7 @@ export const allProjects = [
     category: 'Blockchain',
     github: 'https://github.com/BhekumusaEric/TruBudget',
     demo: 'https://github.com/BhekumusaEric/TruBudget',
-    image: './images/projects/trubudget.jpg'
+    image: '/images/projects/trubudget.jpg'
   },
   // NEW PROJECTS - Recent work showcasing expanded skill set
   {
@@ -175,7 +175,7 @@ export const allProjects = [
     category: 'Java Development',
     github: 'https://github.com/BhekumusaEric/TrainJava',
     demo: 'https://github.com/BhekumusaEric/TrainJava',
-    image: './images/projects/train-java.jpg'
+    image: '/images/projects/placeholder.jpg'
   },
   {
     id: 8,
@@ -186,7 +186,7 @@ export const allProjects = [
     category: 'Data Science',
     github: 'https://github.com/BhekumusaEric/QuickStats',
     demo: 'https://github.com/BhekumusaEric/QuickStats',
-    image: './images/projects/quickstats.jpg'
+    image: '/images/projects/placeholder.jpg'
   },
   {
     id: 9,
@@ -197,7 +197,7 @@ export const allProjects = [
     category: 'Cloud Development',
     github: 'https://github.com/BhekumusaEric/aws_data_code',
     demo: 'https://github.com/BhekumusaEric/aws_data_code',
-    image: './images/projects/aws-data.jpg'
+    image: '/images/projects/placeholder.jpg'
   },
   {
     id: 10,
@@ -208,7 +208,7 @@ export const allProjects = [
     category: 'AI/ML',
     github: 'https://github.com/BhekumusaEric/NeuroStrike',
     demo: 'https://github.com/BhekumusaEric/NeuroStrike',
-    image: './images/projects/neurostrike.jpg'
+    image: '/images/projects/placeholder.jpg'
   },
   {
     id: 11,
@@ -219,7 +219,7 @@ export const allProjects = [
     category: 'Framework',
     github: 'https://github.com/BhekumusaEric/HYDRA',
     demo: 'https://github.com/BhekumusaEric/HYDRA',
-    image: './images/projects/hydra.jpg'
+    image: '/images/projects/placeholder.jpg'
   },
   {
     id: 12,
@@ -230,7 +230,7 @@ export const allProjects = [
     category: 'Web Development',
     github: 'https://github.com/BhekumusaEric/AdmissionApply',
     demo: 'https://github.com/BhekumusaEric/AdmissionApply',
-    image: './images/projects/admission-apply.jpg'
+    image: '/images/projects/placeholder.jpg'
   }
 ];
 

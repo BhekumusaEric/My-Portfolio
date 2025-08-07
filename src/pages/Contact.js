@@ -375,7 +375,7 @@ const Contact = () => {
                   margin: '0 auto 1.5rem'
                 }}>
                   <img
-                    src={process.env.PUBLIC_URL + "./images/54499080440_5b468ec2b6_o.jpg"}
+                    src={process.env.PUBLIC_URL + "/images/54499080440_5b468ec2b6_o.jpg"}
                     alt="Bhekumusa Eric Ntshwenya"
                     className="coin-rotate"
                     style={{
@@ -447,7 +447,7 @@ const Contact = () => {
 
                 <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                   <motion.a
-                    href={process.env.PUBLIC_URL + "./static/ats-resume.html"}
+                    href={process.env.PUBLIC_URL + "/static/ats-resume.html"}
                     target="_blank"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
@@ -462,7 +462,7 @@ const Contact = () => {
                   </motion.a>
 
                   <motion.a
-                    href={process.env.PUBLIC_URL + "./static/resume.html"}
+                    href={process.env.PUBLIC_URL + "/static/resume.html"}
                     target="_blank"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}

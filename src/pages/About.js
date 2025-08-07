@@ -220,7 +220,7 @@ const About = () => {
                 margin: '0 auto 2rem'
               }}>
                 <img
-                  src={process.env.PUBLIC_URL + "./images/54499080440_5b468ec2b6_o.jpg"}
+                  src={process.env.PUBLIC_URL + "/images/54499080440_5b468ec2b6_o.jpg"}
                   alt="Bhekumusa Eric Ntshwenya"
                   className="coin-rotate"
                   style={{
