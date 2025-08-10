@@ -33,10 +33,22 @@ export default function About() {
       description: 'Intensive software engineering program focusing on practical coding skills and problem-solving.'
     },
     {
+      institution: 'Central Johannesburg TVET College',
+      degree: 'Information Technology and Computer Science',
+      period: 'Expected 2025',
+      description: 'Focused on IT fundamentals and computer science theory.'
+    },
+    {
+      institution: 'Believers Care Society Academy',
+      degree: 'Office Administration',
+      period: '2020',
+      description: 'Focused on administrative skills and office management.'
+    },
+    {
       institution: 'Self-Learning & Online Courses',
-      degree: 'AI & Machine Learning Specialization',
+      degree: 'SAP Umuzi Educate To Employ - Nemisa Program - IBM - Cisco Netacad',
       period: '2022 - Present',
-      description: 'Completed various courses and certifications in AI, machine learning, and data science through platforms like Coursera and Udemy.'
+      description: 'Online courses and self-learning focused on expanding technical and soft skills.'
     }
   ];
   
@@ -48,11 +60,29 @@ export default function About() {
       description: 'Developing custom AI solutions and web applications for clients. Projects include predictive models, data analysis tools, and responsive websites.'
     },
     {
-      company: 'Open Source Contributor',
-      position: 'Developer',
-      period: '2021 - Present',
-      description: 'Contributing to various open-source projects, primarily focusing on Python libraries and AI tools.'
-    }
+      company: 'Sappas Hackathon',
+      position: 'Winner',
+      period: '2024',
+      description: 'Won the prestigious Sappas hackathon competition, demonstrating exceptional problem-solving skills and innovative thinking in a competitive environment.'
+    },
+    {
+      company: 'Central Johannesburg TVET College',
+      position: 'Software Developer & Technical Instructor',
+      period: '2023 - Present',
+      description: 'Developed and delivered technical projects and problems for software development. Created educational software solutions. Mentored students in programming concepts, problem-solving methodologies, and technical skills. Implemented technology-enhanced learning solutions to improve educational outcomes.'
+    },
+    {
+      company: 'WeThinkCode_',
+      position: 'Student',
+      period: '2023 - Present',
+      description: 'Studying at prestigious WeThinkCode_ academy, focusing on practical coding skills and industry readiness.'
+    },
+    {
+      company: 'FNB App Academy',
+      position: 'Student',
+      period: '2025',
+      description: 'Studying at FNB App Academy, focusing on fullstack web development.'
+    },
   ];
   
   return (
@@ -97,7 +127,7 @@ export default function About() {
                   What drives me is the opportunity to create innovative solutions that have a meaningful impact. Whether it's developing an AI-powered safety app or building a machine learning model to predict loan approvals, I'm always looking for ways to leverage technology for good.
                 </p>
                 <p>
-                  When I'm not coding, I enjoy learning about new technologies, contributing to open-source projects, and sharing my knowledge with others in the tech community.
+                  When I'm not coding, I enjoy learning about new technologies and sharing my knowledge with others in the tech community.
                 </p>
               </div>
             </motion.div>
@@ -117,7 +147,7 @@ export default function About() {
                 
                 <div className="glass-effect p-4 rounded-lg">
                   <h3 className="text-xl font-semibold mb-2 text-primary">Focus Areas</h3>
-                  <p className="text-gray-300">AI/ML Development, Web Development, Mobile Apps</p>
+                  <p className="text-gray-300">Systems Development, Web Development, Mobile Apps</p>
                 </div>
                 
                 <div className="glass-effect p-4 rounded-lg">

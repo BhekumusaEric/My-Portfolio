@@ -203,48 +203,16 @@ const Certifications = () => {
     },
     {
       id: 3,
-      title: 'Python Programming Certification',
-      provider: 'Python Institute',
-      date: '2023',
+      title: 'Python Programming Certifications',
+      provider: 'Cisco Netacad & IBM',
+      date: '2024',
       description: 'Advanced Python programming skills including OOP, data structures, and algorithms.',
       skills: ['Python', 'OOP', 'Data Structures'],
       icon: 'PY',
       bgColor: '#3776AB',
       verifyUrl: '#'
     },
-    {
-      id: 4,
-      title: 'Machine Learning Specialization',
-      provider: 'Coursera - Stanford University',
-      date: '2023',
-      description: 'Comprehensive understanding of machine learning algorithms and their applications.',
-      skills: ['Machine Learning', 'TensorFlow', 'Neural Networks'],
-      icon: 'ML',
-      bgColor: '#FF6F00',
-      verifyUrl: '#'
-    },
-    {
-      id: 5,
-      title: 'Java Programming Certification',
-      provider: 'Oracle',
-      date: '2024',
-      description: 'Professional-level Java programming skills and enterprise development practices.',
-      skills: ['Java', 'Spring Framework', 'Enterprise Development'],
-      icon: 'JV',
-      bgColor: '#ED8B00',
-      verifyUrl: '#'
-    },
-    {
-      id: 6,
-      title: 'C# Programming Certification',
-      provider: 'Microsoft',
-      date: '2024',
-      description: 'Advanced C# programming and .NET framework development capabilities.',
-      skills: ['C#', '.NET Framework', 'ASP.NET'],
-      icon: 'C#',
-      bgColor: '#239120',
-      verifyUrl: '#'
-    },
+
     {
       id: 7,
       title: 'Cisco CCNA (Cisco Certified Network Associate)',

@@ -246,20 +246,32 @@ const Achievements = () => {
     },
     {
       id: 3,
-      title: 'Azure Cloud Certification',
-      date: '2024',
-      description: 'Achieved Microsoft Azure Fundamentals certification, validating cloud computing knowledge and modern infrastructure understanding.'
+      title: 'SAP Tech Consultant Certification',
+      date: '2025',
+      description: 'Professional certification in SAP enterprise solutions, demonstrating expertise in business process optimization and enterprise software implementation.'
     },
     {
-      id: 4,
-      title: 'AI/ML Project Portfolio',
-      date: '2023-2024',
-      description: 'Developed multiple AI and machine learning projects including SafeWayAI and Smart Loan Approval Predictor, showcasing practical AI application skills.'
+      id: 7,
+      title: "CCNA",
+      date: '2025',
+      description: 'Professional-level networking certification covering network fundamentals, network access, IP connectivity, IP services, security fundamentals, and automation.'
+    },
+    {
+      id: 8,
+      title: 'IT Essentials A+',
+      date: '2025',
+      description: 'Comprehensive IT fundamentals certification covering computer hardware, software, networking, security, and troubleshooting essentials.'
+    },
+    {
+      id: 6,
+      title: 'Python Programming Certification',
+      date: '2024',
+      description: 'Advanced Python programming skills including OOP, data structures, and algorithms.'
     },
     {
       id: 5,
       title: 'WeThinkCode_ Enrollment',
-      date: '2023',
+      date: '2024',
       description: 'Accepted into the prestigious WeThinkCode_ software development academy, joining an elite program focused on practical coding skills.'
     }
   ];
