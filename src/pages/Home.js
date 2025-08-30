@@ -276,7 +276,7 @@ const Home = () => {
         <SectionTitle>Featured Projects</SectionTitle>
         <Divider />
         <SectionSubtitle>
-          Check out some of my recent work. These projects showcase my skills in AI, web development, and problem-solving.
+          Check out some of my recent work. These projects showcase my skills in Software Development, web development, and problem-solving.
         </SectionSubtitle>
 
         <ProjectsGrid>
@@ -314,7 +314,7 @@ const Home = () => {
           >
             <CTATitle>Let's Work Together</CTATitle>
             <CTADescription>
-              I'm currently available for freelance work and full-time positions in AI/ML development.
+              I'm currently available for freelance work and full-time positions in Software development.
             </CTADescription>
             <Link to="/contact">
               <motion.button
