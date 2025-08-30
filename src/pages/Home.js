@@ -203,14 +203,14 @@ const Home = () => {
             transition={{ duration: 0.5 }}
           >
             <HeroTitle>
-              Hi, I'm <span className="gradient-text">Eric Ntshwenya</span>
+              Hi, I'm <span className="gradient-text">Bhekumusa Eric Ntshwenya</span>
             </HeroTitle>
             <HeroSubtitle>
-              AI/ML Developer & Problem Solver
+              Software Developer & Problem Solver
             </HeroSubtitle>
             <HeroDescription>
-              I build intelligent solutions that solve real-world problems. Specializing in AI, machine learning, and web development.
-              🏆 Recent Sappas Hackathon Winner with expertise in Java, C#, and cloud technologies.
+              I build intelligent solutions that solve real-world problems. Specializing in software development, machine learning, and web development.
+              🏆 Recent Sappas Hackathon Winner with expertise in Java, and cloud technologies.
             </HeroDescription>
 
             {/* Achievement Badges - Prominently display major accomplishments */}
