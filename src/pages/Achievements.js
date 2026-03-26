@@ -273,21 +273,21 @@ const Achievements = () => {
       title: 'Amazon Q Hackathon',
       date: '2025',
       description: '1st Place Winner - AI Assisted Development',
-      icon: '🥇'
+      icon: ''
     },
     {
       id: 103,
       title: 'Meta LLAMA Hackathon',
       date: '2025',
       description: '1st Place Winner - Innovative LLM Applications',
-      icon: '🚀'
+      icon: ''
     },
     {
       id: 104,
       title: 'W&R SETA Hackathon',
       date: '2025',
       description: '1st Place Winner - Community Impact Tech',
-      icon: '🌟'
+      icon: ''
     }
   ];
 
@@ -298,28 +298,28 @@ const Achievements = () => {
       title: 'SAP Integration Developer',
       date: '2026',
       description: 'Professional certification in SAP integration development, focusing on connecting business processes and applications.',
-      icon: '🔗'
+      icon: ''
     },
     {
       id: 202,
       title: 'SAP S/4 Hana Database Administrator',
       date: '2026',
       description: 'Expertise in managing and optimizing SAP S/4 Hana databases for enterprise performance.',
-      icon: '🗄️'
+      icon: ''
     },
     {
       id: 203,
       title: 'IBM Project Manager Certificate',
       date: '2026',
       description: 'Professional certification in project management methodologies and practices, earned through IBM.',
-      icon: '📊'
+      icon: ''
     },
     {
       id: 105,
       title: 'TeensInAI SA Mentor (2nd Place)',
       date: '2025',
       description: 'Mentored a brilliant group of students who secured 2nd place in the TeensInAI SA competition.',
-      icon: '🤝'
+      icon: ''
     },
     {
       id: 3,
@@ -380,7 +380,7 @@ const Achievements = () => {
             transition={{ duration: 0.6 }}
           >
             <FeaturedAchievement>
-              <FeaturedIcon>🏆</FeaturedIcon>
+              <FeaturedIcon></FeaturedIcon>
               <FeaturedTitle>Microsoft SAPPAS Hackathon Winner</FeaturedTitle>
               <FeaturedDescription>
                 Emerged victorious in the prestigious Microsoft SAPPAS Hackathon, developing an AI-powered safety solution. 

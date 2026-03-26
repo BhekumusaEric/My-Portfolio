@@ -113,77 +113,77 @@ const AchievementBadges = ({ achievements = [] }) => {
       id: 1,
       text: 'Sappas Hackathon Winner',
       type: 'hackathon',
-      icon: '🏆',
+      icon: '',
       tooltip: 'Won the prestigious Sappas Hackathon competition'
     },
     {
       id: 201,
       text: 'SAP Integration Developer',
       type: 'certification',
-      icon: '🔗',
+      icon: '',
       tooltip: 'Professional certification in SAP integration development'
     },
     {
       id: 202,
       text: 'SAP S/4 Hana DB Admin',
       type: 'certification',
-      icon: '🗄️',
+      icon: '',
       tooltip: 'Expertise in SAP S/4 Hana Database Administration'
     },
     {
       id: 203,
       text: 'IBM Project Manager',
       type: 'certification',
-      icon: '📊',
+      icon: '',
       tooltip: 'IBM Professional Project Manager Certification'
     },
     {
       id: 2,
       text: 'SAP Tech Consultant',
       type: 'certification',
-      icon: '🏢',
+      icon: '',
       tooltip: 'SAP Tech Consultant Certification - Enterprise Solutions Expert'
     },
     {
       id: 3,
       text: 'AI/ML Specialist',
       type: 'certification',
-      icon: '🤖',
+      icon: '',
       tooltip: 'Machine Learning and AI Development Expert'
     },
     {
       id: 4,
       text: 'Full-Stack Developer',
       type: 'project',
-      icon: '💻',
+      icon: '',
       tooltip: 'Proficient in both frontend and backend development'
     },
     {
       id: 5,
       text: 'Java Developer',
       type: 'certification',
-      icon: '☕',
+      icon: '',
       tooltip: 'Recently added Java to professional toolkit'
     },
     {
       id: 6,
       text: 'C# Developer',
       type: 'certification',
-      icon: '#️⃣',
+      icon: '',
       tooltip: 'Recently mastered C# and .NET development'
     },
     {
       id: 7,
       text: 'Open Source Contributor',
       type: 'recognition',
-      icon: '🌟',
+      icon: '',
       tooltip: 'Active contributor to open source projects'
     },
     {
       id: 8,
       text: 'Cisco CCNA Certified',
       type: 'certification',
-      icon: '🌐',
+      icon: '',
       tooltip: 'Cisco Certified Network Associate - Professional networking expertise'
     }
   ];
