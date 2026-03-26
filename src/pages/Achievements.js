@@ -294,6 +294,27 @@ const Achievements = () => {
   // Timeline data for other achievements (removed the 4 hackathons listed above)
   const timelineAchievements = [
     {
+      id: 201,
+      title: 'SAP Integration Developer',
+      date: '2026',
+      description: 'Professional certification in SAP integration development, focusing on connecting business processes and applications.',
+      icon: '🔗'
+    },
+    {
+      id: 202,
+      title: 'SAP S/4 Hana Database Administrator',
+      date: '2026',
+      description: 'Expertise in managing and optimizing SAP S/4 Hana databases for enterprise performance.',
+      icon: '🗄️'
+    },
+    {
+      id: 203,
+      title: 'IBM Project Manager Certificate',
+      date: '2026',
+      description: 'Professional certification in project management methodologies and practices, earned through IBM.',
+      icon: '📊'
+    },
+    {
       id: 105,
       title: 'TeensInAI SA Mentor (2nd Place)',
       date: '2025',

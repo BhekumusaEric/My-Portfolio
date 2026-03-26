@@ -36,12 +36,6 @@ const ProjectImage = styled.div`
   position: relative;
 `;
 
-const ProjectInitial = styled.div`
-  font-size: 3rem;
-  font-weight: 800;
-  color: var(--primary-color);
-`;
-
 const ProjectPreview = styled.div`
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.5);
@@ -171,21 +165,15 @@ const ProjectCard = ({ project }) => {
     >
       <CardContent>
         <ProjectImage hovered={hovered}>
-          {project.image ? (
+          {project.image && (
             <img
               src={process.env.PUBLIC_URL + project.image}
               alt={project.title}
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
-          ) : (
-            <div className="text-center">
-              <ProjectInitial>{project.title.charAt(0)}</ProjectInitial>
-              <ProjectPreview>Project Preview</ProjectPreview>
-            </div>
           )}
           <ProjectImageOverlay hovered={hovered}>
             <div className="text-center">
-              <ProjectInitial>{project.title.charAt(0)}</ProjectInitial>
               <ProjectPreview>Click to view details</ProjectPreview>
             </div>
           </ProjectImageOverlay>

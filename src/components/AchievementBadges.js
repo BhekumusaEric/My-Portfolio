@@ -117,6 +117,27 @@ const AchievementBadges = ({ achievements = [] }) => {
       tooltip: 'Won the prestigious Sappas Hackathon competition'
     },
     {
+      id: 201,
+      text: 'SAP Integration Developer',
+      type: 'certification',
+      icon: '🔗',
+      tooltip: 'Professional certification in SAP integration development'
+    },
+    {
+      id: 202,
+      text: 'SAP S/4 Hana DB Admin',
+      type: 'certification',
+      icon: '🗄️',
+      tooltip: 'Expertise in SAP S/4 Hana Database Administration'
+    },
+    {
+      id: 203,
+      text: 'IBM Project Manager',
+      type: 'certification',
+      icon: '📊',
+      tooltip: 'IBM Professional Project Manager Certification'
+    },
+    {
       id: 2,
       text: 'SAP Tech Consultant',
       type: 'certification',
