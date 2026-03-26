@@ -164,13 +164,6 @@ const AchievementBadges = ({ achievements = [] }) => {
       type: 'certification',
       icon: '🌐',
       tooltip: 'Cisco Certified Network Associate - Professional networking expertise'
-    },
-    {
-      id: 9,
-      text: 'WeThinkCode_ Student',
-      type: 'recognition',
-      icon: '🎓',
-      tooltip: 'Studying at prestigious WeThinkCode_ academy'
     }
   ];
 

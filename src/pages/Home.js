@@ -159,34 +159,34 @@ const CTADescription = styled.p`
 // Featured projects data
 const featuredProjects = [
   {
+    id: 101,
+    title: 'Apply4Me',
+    slug: 'apply4me',
+    description: 'Flagship automation platform serving 10,000+ users with advanced web scraping and process automation.',
+    technologies: ['React', 'Python', 'Automation'],
+    github: 'https://github.com/BhekumusaEric/',
+    demo: 'https://apply4me-eta.vercel.app/',
+    image: '/images/projects/apply4me.jpg'
+  },
+  {
+    id: 102,
+    title: 'SAAIO Training Grounds',
+    slug: 'saaio-training',
+    description: 'Interactive AI education platform with an in-browser Python environment for high school students.',
+    technologies: ['React', 'Pyodide', 'AI/ML'],
+    github: 'https://github.com/BhekumusaEric/',
+    demo: 'https://ai-learning-system-ten.vercel.app/',
+    image: '/images/projects/saaio.jpg'
+  },
+  {
     id: 1,
     title: 'SafeWayAI',
     slug: 'safeway-ai',
-    description: 'AI-powered emergency detection platform that provides safe routes to destinations and detects danger in real-time.',
-    technologies: ['Python', 'Flet', 'Google Maps API', 'Firebase'],
+    description: 'AI-powered emergency detection platform providing safe routes and real-time danger alerts.',
+    technologies: ['Python', 'Flet', 'ML'],
     github: 'https://github.com/BhekumusaEric/MSAIskillshackathon',
     demo: 'https://github.com/BhekumusaEric/MSAIskillshackathon',
-    image: './images/projects/safeway-ai.jpg'
-  },
-  {
-    id: 2,
-    title: 'Smart Loan Approval Predictor',
-    slug: 'smart-loan-approval',
-    description: 'Mobile application for Eric Bank System that allows users to apply for loans and get instant approval predictions using ML.',
-    technologies: ['Python', 'Kivy', 'Machine Learning'],
-    github: 'https://github.com/BhekumusaEric/Smart-Loan-Approval-Predictor',
-    demo: 'https://github.com/BhekumusaEric/Smart-Loan-Approval-Predictor',
-    image: './images/projects/loan-approval.jpg'
-  },
-  {
-    id: 3,
-    title: 'Eduwize',
-    slug: 'eduwize',
-    description: 'AI-powered learning platform designed to enhance student learning through personalized study material recommendations.',
-    technologies: ['Django', 'Azure Cognitive Services', 'Python'],
-    github: 'https://github.com/BhekumusaEric/Eduwize',
-    demo: 'https://github.com/BhekumusaEric/Eduwize',
-    image: './images/projects/eduwize.jpg'
+    image: '/images/projects/safeway-ai.jpg'
   }
 ];
 
@@ -209,8 +209,8 @@ const Home = () => {
               Software Developer & Problem Solver
             </HeroSubtitle>
             <HeroDescription>
-              I build intelligent solutions that solve real-world problems. Specializing in software development, machine learning, and web development.
-              🏆 Recent Sappas Hackathon Winner with expertise in Java, and cloud technologies.
+              I build intelligent automation solutions that solve real-world problems. Specializing in Python, automation, and full-stack development.
+              🏆 <strong style={{color: 'var(--primary-color)'}}>4-time Hackathon Winner</strong> (Microsoft, Amazon, Meta, W&R SETA) with a track record of delivering high-impact products like Apply4Me (10,000+ users).
             </HeroDescription>
 
             {/* Achievement Badges - Prominently display major accomplishments */}

@@ -83,12 +83,19 @@ const TechStack = styled.div`
 `;
 
 const TechTag = styled.span`
-  background: rgba(9, 105, 218, 0.1);
+  background: rgba(0, 122, 255, 0.1);
   color: var(--primary-color);
-  padding: 0.25rem 0.75rem;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 500;
+  padding: 0.35rem 0.85rem;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: 1px solid rgba(0, 122, 255, 0.2);
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: rgba(0, 122, 255, 0.2);
+    border-color: var(--primary-color);
+  }
 `;
 
 const CardLinks = styled.div`

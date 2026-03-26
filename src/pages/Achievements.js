@@ -157,23 +157,15 @@ const TimelineItem = styled.div`
   position: relative;
   margin-bottom: 3rem;
   
-  &:nth-child(odd) {
-    padding-right: 50%;
-    text-align: right;
-    
-    @media (max-width: 768px) {
-      padding-right: 0;
-      padding-left: 60px;
-      text-align: left;
-    }
-  }
+  /* Use prop for alignment instead of nth-child on the item itself */
+  padding-right: ${props => props.index % 2 === 0 ? '50%' : '0'};
+  padding-left: ${props => props.index % 2 === 0 ? '0' : '50%'};
+  text-align: ${props => props.index % 2 === 0 ? 'right' : 'left'};
   
-  &:nth-child(even) {
-    padding-left: 50%;
-    
-    @media (max-width: 768px) {
-      padding-left: 60px;
-    }
+  @media (max-width: 768px) {
+    padding-right: 0 !important;
+    padding-left: 60px !important;
+    text-align: left !important;
   }
 `;
 
@@ -186,20 +178,13 @@ const TimelineMarker = styled.div`
   border-radius: 50%;
   border: 4px solid var(--bg-color);
   
-  ${TimelineItem}:nth-child(odd) & {
-    right: -10px;
-    
-    @media (max-width: 768px) {
-      left: 10px;
-    }
-  }
+  /* Position based on alignment */
+  right: ${props => props.index % 2 === 0 ? '-10px' : 'auto'};
+  left: ${props => props.index % 2 === 0 ? 'auto' : '-10px'};
   
-  ${TimelineItem}:nth-child(even) & {
-    left: -10px;
-    
-    @media (max-width: 768px) {
-      left: 10px;
-    }
+  @media (max-width: 768px) {
+    left: 10px !important;
+    right: auto !important;
   }
 `;
 
@@ -207,72 +192,143 @@ const TimelineCard = styled.div`
   background: rgba(31, 34, 46, 0.7);
   backdrop-filter: blur(10px);
   border-radius: 12px;
-  padding: 2rem;
+  padding: 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+  }
 `;
 
 const TimelineTitle = styled.h4`
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--primary-color);
   margin-bottom: 0.5rem;
 `;
 
 const TimelineDate = styled.div`
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #777;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 `;
 
 const TimelineDescription = styled.p`
   color: #a0a0a0;
   line-height: 1.6;
+  font-size: 0.95rem;
+`;
+
+const HackathonGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  margin-top: -2rem;
+  margin-bottom: 4rem;
+  
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+`;
+
+const HackathonCard = styled.div`
+  background: rgba(31, 34, 46, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(0, 122, 255, 0.1);
+  }
+`;
+
+const HackathonIcon = styled.div`
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+`;
+
+const HackathonName = styled.h4`
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+`;
+
+const HackathonDescription = styled.p`
+  font-size: 0.9rem;
+  color: #a0a0a0;
 `;
 
 const Achievements = () => {
-  // Timeline data for major achievements
-  const timelineAchievements = [
+  // Hackathon wins section (side-by-side)
+  const majorHackathons = [
     {
-      id: 1,
-      title: 'Sappas Hackathon Winner',
-      date: '2024',
-      description: 'Won the prestigious Sappas hackathon competition, demonstrating exceptional problem-solving skills and innovative thinking in a competitive environment.'
+      id: 102,
+      title: 'Amazon Q Hackathon',
+      date: '2025',
+      description: '1st Place Winner - AI Assisted Development',
+      icon: '🥇'
     },
     {
-      id: 2,
-      title: 'Java & C# Skill Expansion',
-      date: '2024',
-      description: 'Successfully expanded programming expertise to include Java and C# development, adding enterprise-level programming capabilities to the toolkit.'
+      id: 103,
+      title: 'Meta LLAMA Hackathon',
+      date: '2025',
+      description: '1st Place Winner - Innovative LLM Applications',
+      icon: '🚀'
+    },
+    {
+      id: 104,
+      title: 'W&R SETA Hackathon',
+      date: '2025',
+      description: '1st Place Winner - Community Impact Tech',
+      icon: '🌟'
+    }
+  ];
+
+  // Timeline data for other achievements (removed the 4 hackathons listed above)
+  const timelineAchievements = [
+    {
+      id: 105,
+      title: 'TeensInAI SA Mentor (2nd Place)',
+      date: '2025',
+      description: 'Mentored a brilliant group of students who secured 2nd place in the TeensInAI SA competition.',
+      icon: '🤝'
     },
     {
       id: 3,
       title: 'SAP Tech Consultant Certification',
       date: '2025',
-      description: 'Professional certification in SAP enterprise solutions, demonstrating expertise in business process optimization and enterprise software implementation.'
+      description: 'Professional certification in SAP enterprise solutions, demonstrating expertise in business process optimization.'
     },
     {
       id: 7,
       title: "CCNA",
       date: '2025',
-      description: 'Professional-level networking certification covering network fundamentals, network access, IP connectivity, IP services, security fundamentals, and automation.'
+      description: 'Professional-level networking certification covering network fundamentals and security.'
     },
     {
       id: 8,
       title: 'IT Essentials A+',
       date: '2025',
-      description: 'Comprehensive IT fundamentals certification covering computer hardware, software, networking, security, and troubleshooting essentials.'
+      description: 'Comprehensive IT fundamentals certification covering computer hardware and software essentials.'
     },
     {
       id: 6,
       title: 'Python Programming Certification',
-      date: '2024',
+      date: '2025',
       description: 'Advanced Python programming skills including OOP, data structures, and algorithms.'
     },
     {
       id: 5,
       title: 'WeThinkCode_ Enrollment',
       date: '2024',
-      description: 'Accepted into the prestigious WeThinkCode_ software development academy, joining an elite program focused on practical coding skills.'
+      description: 'Accepted into the prestigious WeThinkCode_ software development academy.'
     }
   ];
 
@@ -294,14 +350,6 @@ const Achievements = () => {
         </motion.div>
       </PageHeader>
       
-      {/* Achievement Badges Section */}
-      <Section>
-        <SectionContent>
-          <SectionTitle className="gradient-text">Achievement Highlights</SectionTitle>
-          <AchievementBadges />
-        </SectionContent>
-      </Section>
-      
       {/* Featured Achievement - Sappas Hackathon Win */}
       <Section>
         <SectionContent>
@@ -312,15 +360,42 @@ const Achievements = () => {
           >
             <FeaturedAchievement>
               <FeaturedIcon>🏆</FeaturedIcon>
-              <FeaturedTitle>Sappas Hackathon Winner</FeaturedTitle>
+              <FeaturedTitle>Microsoft SAPPAS Hackathon Winner</FeaturedTitle>
               <FeaturedDescription>
-                Emerged victorious in the competitive Sappas hackathon, showcasing innovative problem-solving 
-                and technical excellence. This achievement demonstrates the ability to work under pressure, 
-                collaborate effectively, and deliver exceptional results in a competitive environment.
+                Emerged victorious in the prestigious Microsoft SAPPAS Hackathon, developing an AI-powered safety solution. 
+                This achievement demonstrates the ability to work under pressure, collaborate effectively, and 
+                deliver exceptional results in a highly competitive environment.
               </FeaturedDescription>
-              <FeaturedDate>2024</FeaturedDate>
+              <FeaturedDate>2025</FeaturedDate>
             </FeaturedAchievement>
           </motion.div>
+
+          {/* New side-by-side hackathon cards */}
+          <HackathonGrid>
+            {majorHackathons.map((hack, index) => (
+              <motion.div
+                key={hack.id}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <HackathonCard>
+                  <HackathonIcon>{hack.icon}</HackathonIcon>
+                  <HackathonName>{hack.title}</HackathonName>
+                  <HackathonDescription>{hack.description}</HackathonDescription>
+                  <div style={{fontSize: '0.8rem', color: 'var(--primary-color)', marginTop: '0.5rem'}}>{hack.date}</div>
+                </HackathonCard>
+              </motion.div>
+            ))}
+          </HackathonGrid>
+        </SectionContent>
+      </Section>
+      
+      {/* Achievement Badges Section */}
+      <Section>
+        <SectionContent>
+          <SectionTitle className="gradient-text">Achievement Highlights</SectionTitle>
+          <AchievementBadges />
         </SectionContent>
       </Section>
       
@@ -337,8 +412,8 @@ const Achievements = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
               >
-                <TimelineItem>
-                  <TimelineMarker />
+                <TimelineItem index={index}>
+                  <TimelineMarker index={index} />
                   <TimelineCard>
                     <TimelineTitle>{achievement.title}</TimelineTitle>
                     <TimelineDate>{achievement.date}</TimelineDate>

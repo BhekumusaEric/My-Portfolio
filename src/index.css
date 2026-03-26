@@ -1,32 +1,48 @@
 :root {
-  --primary-color: #0969DA;
-  --secondary-color: #1F222E;
-  --accent-color: #F8D866;
-  --dark-color: #121212;
-  --light-color: #f5f5f5;
+  --primary-color: #007AFF; /* Apple-style vibrant blue */
+  --secondary-color: #1a1a1a;
+  --accent-color: #FFD700; /* Gold for highlights */
+  --dark-color: #0b0c10;
+  --light-color: #e3e3e3;
+  --card-bg: rgba(28, 30, 39, 0.7);
+  --selection-bg: rgba(0, 122, 255, 0.3);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glow-color: rgba(0, 122, 255, 0.4);
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  cursor: default;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   background-color: var(--dark-color);
   color: var(--light-color);
   line-height: 1.6;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--selection-bg);
+  color: white;
 }
 
 code, pre {
-  font-family: 'Fira Code', monospace;
+  font-family: 'Fira Code', 'JetBrains Mono', monospace;
+}
+
+a, button {
+  cursor: pointer;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 ul {
@@ -45,26 +61,44 @@ button, input, textarea {
 }
 
 .section {
-  padding: 6rem 0;
+  padding: 8rem 0;
 }
 
 .gradient-text {
-  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+  background: linear-gradient(135deg, #007AFF, #00D1FF, #7000FF);
+  background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  animation: gradientFlow 5s ease infinite;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .glass-effect {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.glass-effect:hover {
+  border-color: rgba(0, 122, 255, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 122, 255, 0.1);
+}
+
+.premium-glow {
+  box-shadow: 0 0 30px var(--glow-color);
 }
 
 @media (max-width: 768px) {
   .section {
-    padding: 4rem 0;
+    padding: 5rem 0;
   }
 }

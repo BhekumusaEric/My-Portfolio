@@ -191,23 +191,21 @@ const Skills = () => {
     {
       category: 'Programming Languages',
       skills: [
-        { name: 'Python', level: 95, color: '#3776AB' }, // Primary language - highest proficiency
-        { name: 'JavaScript', level: 85, color: '#F7DF1E' }, // Strong web development skills
-        { name: 'Java', level: 80, color: '#ED8B00' }, // Recently added - enterprise development
-        { name: 'C#', level: 75, color: '#239120' }, // Recently added - .NET development
-        { name: 'HTML', level: 90, color: '#E34F26' }, // Web markup expertise
-        { name: 'CSS', level: 85, color: '#1572B6' }, // Styling and responsive design
-        { name: 'SQL', level: 80, color: '#4479A1' }, // Database management
+        { name: 'Python', level: 95, color: '#3776AB' }, // Proficient
+        { name: 'JavaScript', level: 85, color: '#F7DF1E' }, 
+        { name: 'Java', level: 70, color: '#ED8B00' }, // Good
+        { name: 'C#', level: 40, color: '#239120' }, // Beginner
+        { name: 'HTML', level: 90, color: '#E34F26' }, 
+        { name: 'CSS', level: 85, color: '#1572B6' }, 
+        { name: 'SQL', level: 80, color: '#4479A1' }, 
       ]
     },
     {
-      category: 'AI & Machine Learning',
+      category: 'AI & Machine Learning (Foundations)',
       skills: [
-        { name: 'TensorFlow', level: 85, color: '#FF6F00' },
-        { name: 'Scikit-Learn', level: 90, color: '#F7931E' },
-        { name: 'Natural Language Processing', level: 80, color: '#8BC34A' },
-        { name: 'Computer Vision', level: 75, color: '#9C27B0' },
-        { name: 'Data Analysis', level: 85, color: '#03A9F4' },
+        { name: 'Neural Networks (Concepts)', level: 40, color: '#9C27B0' },
+        { name: 'Python for Data Science', level: 70, color: '#03A9F4' },
+        { name: 'AI Problem Solving', level: 60, color: '#8BC34A' },
       ]
     },
     {

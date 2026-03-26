@@ -100,10 +100,57 @@ const EmptyDescription = styled.p`
 // This showcases the developer's growth and diverse technical capabilities
 export const allProjects = [
   {
+    id: 101,
+    title: 'Apply4Me',
+    slug: 'apply4me',
+    description: 'The flagship automation platform revolutionizing South African higher education applications through advanced web scraping and process automation. Served 10,000+ users.',
+    technologies: ['React', 'Node.js', 'Python', 'Web Scraping', 'Automation'],
+    category: 'Full Stack / Automation',
+    github: 'https://github.com/BhekumusaEric/',
+    demo: 'https://apply4me-eta.vercel.app/',
+    image: '/images/projects/apply4me.jpg',
+    featured: true,
+    stats: '10,000+ Users Served'
+  },
+  {
+    id: 102,
+    title: 'SAAIO Training Grounds',
+    slug: 'saaio-training',
+    description: 'An interactive AI education platform for students competing in the International Olympiad in AI. Features a "Read → Practice" pattern with an in-browser Python environment (Pyodide).',
+    technologies: ['React', 'Python', 'Pyodide', 'AI/ML'],
+    category: 'AI / EdTech',
+    github: 'https://github.com/BhekumusaEric/',
+    demo: 'https://ai-learning-system-ten.vercel.app/',
+    image: '/images/projects/saaio.jpg',
+    featured: true
+  },
+  {
+    id: 103,
+    title: 'Digital Inclusion Program (DIP)',
+    slug: 'dip',
+    description: 'A coding literacy platform built pro bono for WeThinkCode_ × IDC SEF partnership to train communities across South Africa in Python and basic ML.',
+    technologies: ['React', 'Python', 'EdTech'],
+    category: 'Social Impact / EdTech',
+    github: 'https://github.com/BhekumusaEric/',
+    demo: 'https://ai-learning-system-ten.vercel.app/dip/login',
+    image: '/images/projects/dip.jpg'
+  },
+  {
+    id: 104,
+    title: 'Work Readiness Program (WRP)',
+    slug: 'wrp',
+    description: 'A workplace skills platform featuring interactive modules, an AI mock interview bot, and a CV builder, built pro bono for WeThinkCode_ community rollout.',
+    technologies: ['React', 'AI Bot', 'Web Development'],
+    category: 'Social Impact / Web',
+    github: 'https://github.com/BhekumusaEric/',
+    demo: 'https://ai-learning-system-ten.vercel.app/wrp/login',
+    image: '/images/projects/wrp.jpg'
+  },
+  {
     id: 1,
     title: 'SafeWayAI',
     slug: 'safeway-ai',
-    description: 'AI-powered emergency detection platform that provides safe routes to destinations, detects danger in real-time, and allows users to report incidents. The app integrates with Google Maps and uses real crime data to analyze route safety.',
+    description: 'AI-powered emergency detection platform that provides safe routes to destinations, detects danger in real-time, and allows users to report incidents.',
     technologies: ['Python', 'Flet', 'Google Maps API', 'Firebase', 'Machine Learning'],
     category: 'AI/ML',
     github: 'https://github.com/BhekumusaEric/MSAIskillshackathon',
@@ -114,7 +161,7 @@ export const allProjects = [
     id: 2,
     title: 'Smart Loan Approval Predictor',
     slug: 'smart-loan-approval',
-    description: 'A mobile application for Eric Bank System that allows users to apply for loans and get instant approval predictions using machine learning. The app analyzes user data to determine loan eligibility.',
+    description: 'A mobile application for Eric Bank System that allows users to apply for loans and get instant approval predictions using machine learning.',
     technologies: ['Python', 'Kivy', 'Machine Learning', 'SQLite'],
     category: 'AI/ML',
     github: 'https://github.com/BhekumusaEric/Smart-Loan-Approval-Predictor',
@@ -125,112 +172,12 @@ export const allProjects = [
     id: 3,
     title: 'Eduwize',
     slug: 'eduwize',
-    description: 'AI-powered learning platform designed to enhance student learning through personalized study material recommendations, quizzes with performance tracking, and resource management.',
+    description: 'AI-powered learning platform designed to enhance student learning through personalized study material recommendations and performance tracking.',
     technologies: ['Django', 'Azure Cognitive Services', 'Python', 'PostgreSQL'],
     category: 'Web Development',
     github: 'https://github.com/BhekumusaEric/Eduwize',
     demo: 'https://github.com/BhekumusaEric/Eduwize',
     image: '/images/projects/eduwize.jpg'
-  },
-  {
-    id: 4,
-    title: 'My Phone Repair Website',
-    slug: 'phone-repair-website',
-    description: 'A personal website for a mobile repair shop, showcasing services and allowing customers to book repairs online.',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    category: 'Web Development',
-    github: 'https://github.com/BhekumusaEric/myphonerepairwebsite',
-    demo: 'https://bhekumusaeric.github.io/myphonerepairwebsite/',
-    image: '/images/projects/phone-repair.jpg'
-  },
-  {
-    id: 5,
-    title: 'CharityBlockchain',
-    slug: 'charity-blockchain',
-    description: 'Ethereum blockchain project aimed at ensuring complete transparency in charity transactions. Integrates a solidity contract with a metamask wallet on Ganache interfaced accounts and deployment using Node.js.',
-    technologies: ['Blockchain', 'Solidity', 'Ethereum', 'Node.js'],
-    category: 'Blockchain',
-    github: 'https://github.com/BhekumusaEric/CharityBlockchain',
-    demo: 'https://github.com/BhekumusaEric/CharityBlockchain',
-    image: '/images/projects/charity-blockchain.jpg'
-  },
-  {
-    id: 6,
-    title: 'TruBudget',
-    slug: 'trubudget',
-    description: 'A blockchain-based workflow tool for efficient and transparent project management.',
-    technologies: ['Blockchain', 'JavaScript', 'React'],
-    category: 'Blockchain',
-    github: 'https://github.com/BhekumusaEric/TruBudget',
-    demo: 'https://github.com/BhekumusaEric/TruBudget',
-    image: '/images/projects/trubudget.jpg'
-  },
-  // NEW PROJECTS - Recent work showcasing expanded skill set
-  {
-    id: 7,
-    title: 'TrainJava',
-    slug: 'train-java',
-    description: 'Java training and practice repository showcasing object-oriented programming concepts, data structures, and algorithms. Demonstrates proficiency in Java development and enterprise programming patterns.',
-    technologies: ['Java', 'OOP', 'Data Structures', 'Algorithms'],
-    category: 'Java Development',
-    github: 'https://github.com/BhekumusaEric/TrainJava',
-    demo: 'https://github.com/BhekumusaEric/TrainJava',
-    image: '/images/projects/placeholder.jpg'
-  },
-  {
-    id: 8,
-    title: 'QuickStats',
-    slug: 'quickstats',
-    description: 'Statistical analysis and data visualization tool for quick insights. Features data processing capabilities and interactive charts for business intelligence and data-driven decision making.',
-    technologies: ['Python', 'Data Analysis', 'Visualization', 'Statistics'],
-    category: 'Data Science',
-    github: 'https://github.com/BhekumusaEric/QuickStats',
-    demo: 'https://github.com/BhekumusaEric/QuickStats',
-    image: '/images/projects/placeholder.jpg'
-  },
-  {
-    id: 9,
-    title: 'AWS Data Code',
-    slug: 'aws-data-code',
-    description: 'Cloud-based data processing and analytics solution built on AWS infrastructure. Demonstrates cloud computing expertise and scalable data pipeline development.',
-    technologies: ['AWS', 'Python', 'Cloud Computing', 'Data Processing'],
-    category: 'Cloud Development',
-    github: 'https://github.com/BhekumusaEric/aws_data_code',
-    demo: 'https://github.com/BhekumusaEric/aws_data_code',
-    image: '/images/projects/placeholder.jpg'
-  },
-  {
-    id: 10,
-    title: 'NeuroStrike',
-    slug: 'neurostrike',
-    description: 'Advanced neural network implementation for pattern recognition and machine learning applications. Showcases deep learning expertise and AI model development capabilities.',
-    technologies: ['Python', 'Neural Networks', 'Deep Learning', 'AI'],
-    category: 'AI/ML',
-    github: 'https://github.com/BhekumusaEric/NeuroStrike',
-    demo: 'https://github.com/BhekumusaEric/NeuroStrike',
-    image: '/images/projects/placeholder.jpg'
-  },
-  {
-    id: 11,
-    title: 'HYDRA',
-    slug: 'hydra',
-    description: 'Multi-purpose development framework and toolkit. Demonstrates advanced software architecture and system design capabilities with modular and scalable components.',
-    technologies: ['Python', 'Framework Development', 'System Design', 'Architecture'],
-    category: 'Framework',
-    github: 'https://github.com/BhekumusaEric/HYDRA',
-    demo: 'https://github.com/BhekumusaEric/HYDRA',
-    image: '/images/projects/placeholder.jpg'
-  },
-  {
-    id: 12,
-    title: 'AdmissionApply',
-    slug: 'admission-apply',
-    description: 'Application platform designed to help students apply for educational opportunities. Features user management, application tracking, and automated processing workflows.',
-    technologies: ['Web Development', 'Database Management', 'User Authentication', 'Workflow Automation'],
-    category: 'Web Development',
-    github: 'https://github.com/BhekumusaEric/AdmissionApply',
-    demo: 'https://github.com/BhekumusaEric/AdmissionApply',
-    image: '/images/projects/placeholder.jpg'
   }
 ];
 

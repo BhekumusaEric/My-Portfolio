@@ -187,16 +187,16 @@ const About = () => {
             >
               <SectionTitle className="gradient-text">My Story</SectionTitle>
               <Paragraph>
-                I'm Bhekumusa Eric Ntshwenya, a passionate software developer and hackathon winner with expertise spanning AI/ML, web development, and enterprise programming. My journey in tech began with curiosity about solving real-world problems and has evolved into a proven track record of innovative solutions and competitive success.
+                I'm Bhekumusa Eric Ntshwenya, a passionate software developer and <strong>4-time hackathon winner</strong> with expertise in Python, automation, and full-stack development. My journey in tech is driven by a desire to solve real-world problems through innovative code and intelligent systems.
               </Paragraph>
               <Paragraph>
-                Currently studying at WeThinkCode_, I've recently expanded my technical arsenal to include Java and C# development, adding enterprise-level programming capabilities to my existing expertise in Python, JavaScript, and AI technologies. This expansion reflects my commitment to staying current with industry demands and versatile problem-solving approaches.
+                I've successfully built and launched projects like <strong>Apply4Me</strong>, an automation platform that has served over 10,000 users, and <strong>SAAIO Training Grounds</strong>, an interactive AI education platform for international olympiad students.
               </Paragraph>
               <Paragraph>
-                My recent victory in the prestigious Sappas hackathon demonstrates my ability to innovate under pressure and deliver exceptional results in competitive environments. This achievement, combined with my growing portfolio of AI-powered applications like SafeWayAI and NeuroStrike, showcases my capability to transform complex ideas into practical, impactful solutions.
+                My competitive success includes 1st place wins at the <strong>Microsoft SAPPAS</strong>, <strong>Amazon Q</strong>, <strong>Meta LLAMA</strong>, and <strong>W&R SETA</strong> hackathons. These experiences have honed my ability to innovate under pressure and deliver high-impact solutions.
               </Paragraph>
               <Paragraph>
-                What drives me is the intersection of cutting-edge technology and meaningful impact. Whether developing cloud-based data processing systems on AWS, creating neural network implementations, or building full-stack web applications, I'm passionate about leveraging diverse technologies to create solutions that matter. My work spans from AI safety applications to enterprise development frameworks, reflecting both technical depth and breadth.
+                Currently, I am proficient in Python and have a solid foundation in Java and C# development. While I am still growing my professional experience in Machine Learning, I am passionate about applying AI concepts to create meaningful tools and platforms.
               </Paragraph>
               <Paragraph>
                 Beyond coding, I'm committed to continuous learning and professional growth. My recent certifications in cloud computing and expansion into Java and C# development demonstrate my dedication to staying at the forefront of technology trends and industry best practices.
@@ -247,12 +247,12 @@ const About = () => {
 
               <InfoCard>
                 <InfoTitle>Recent Achievement</InfoTitle>
-                <InfoContent>🏆 Sappas Hackathon Winner 2024</InfoContent>
+                <InfoContent>🏆 <strong>4-time Hackathon Winner</strong> (Microsoft, Amazon, Meta, W&R SETA)</InfoContent>
               </InfoCard>
 
               <InfoCard>
                 <InfoTitle>Programming Languages</InfoTitle>
-                <InfoContent>Python, JavaScript, Java, C#, SQL</InfoContent>
+                <InfoContent>Python (Proficient), JavaScript, Java (Good), C# (Beginner)</InfoContent>
               </InfoCard>
 
               <InfoCard>
@@ -262,7 +262,7 @@ const About = () => {
 
               <InfoCard>
                 <InfoTitle>Certifications</InfoTitle>
-                <InfoContent>SAP Tech Consultant, Cisco CCNA, Cisco IT Essentials A+, Java & C# Certified</InfoContent>
+                <InfoContent>SAP Tech Consultant, Cisco CCNA, Cisco IT Essentials A+</InfoContent>
               </InfoCard>
 
               <InfoCard>
