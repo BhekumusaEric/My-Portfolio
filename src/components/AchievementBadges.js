@@ -33,36 +33,58 @@ const Badge = styled(motion.div)`
   position: relative;
   display: flex;
   align-items: center;
-  padding: 0.75rem 1.5rem;
+  padding: ${props => props.hasIcon ? '0.75rem 1.5rem' : '0.6rem 1.2rem'};
   border-radius: 25px;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   cursor: pointer;
   transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   
-  /* Badge type styling - different colors for different achievements */
+  /* Badge type styling - more subtle premium gradients */
   background: ${props => {
     switch (props.type) {
-      case 'hackathon': return 'linear-gradient(135deg, #FFD700, #FFA500)'; // Gold for hackathon wins
-      case 'certification': return 'linear-gradient(135deg, #4CAF50, #45a049)'; // Green for certifications
-      case 'project': return 'linear-gradient(135deg, #2196F3, #1976D2)'; // Blue for major projects
-      case 'recognition': return 'linear-gradient(135deg, #9C27B0, #7B1FA2)'; // Purple for recognition
-      default: return 'linear-gradient(135deg, var(--primary-color), var(--accent-color))';
+      case 'hackathon': return 'linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 165, 0, 0.2))';
+      case 'certification': return 'linear-gradient(135deg, rgba(76, 175, 80, 0.2), rgba(69, 160, 73, 0.2))';
+      case 'project': return 'linear-gradient(135deg, rgba(33, 150, 243, 0.2), rgba(25, 118, 210, 0.2))';
+      case 'recognition': return 'linear-gradient(135deg, rgba(156, 39, 176, 0.2), rgba(123, 31, 162, 0.2))';
+      default: return 'rgba(255, 255, 255, 0.05)';
     }
   }};
   
-  color: white;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  color: ${props => {
+    switch (props.type) {
+      case 'hackathon': return '#FFD700';
+      case 'certification': return '#81C784';
+      case 'project': return '#64B5F6';
+      case 'recognition': return '#BA68C8';
+      default: return 'white';
+    }
+  }};
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   
   &:hover {
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+    background: ${props => {
+      switch (props.type) {
+        case 'hackathon': return 'rgba(255, 215, 0, 0.3)';
+        case 'certification': return 'rgba(76, 175, 80, 0.3)';
+        case 'project': return 'rgba(33, 150, 243, 0.3)';
+        case 'recognition': return 'rgba(156, 39, 176, 0.3)';
+        default: return 'rgba(255, 255, 255, 0.1)';
+      }
+    }};
+    border-color: currentColor;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   }
 `;
 
 const BadgeIcon = styled.div`
   margin-right: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  display: ${props => props.show ? 'block' : 'none'};
 `;
 
 const BadgeText = styled.span`
@@ -196,6 +218,7 @@ const AchievementBadges = ({ achievements = [] }) => {
         <TooltipContainer key={achievement.id}>
           <Badge
             type={achievement.type}
+            hasIcon={!!achievement.icon}
             initial={{ opacity: 0, scale: 0.8, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ 
@@ -210,7 +233,7 @@ const AchievementBadges = ({ achievements = [] }) => {
             }}
             whileTap={{ scale: 0.95 }}
           >
-            <BadgeIcon>{achievement.icon}</BadgeIcon>
+            <BadgeIcon show={!!achievement.icon}>{achievement.icon}</BadgeIcon>
             <BadgeText>{achievement.text}</BadgeText>
           </Badge>
           <Tooltip>{achievement.tooltip}</Tooltip>

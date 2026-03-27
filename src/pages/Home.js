@@ -210,13 +210,8 @@ const Home = () => {
             </HeroSubtitle>
             <HeroDescription>
               I build intelligent automation solutions that solve real-world problems. Specializing in Python, automation, and full-stack development.
-              🏆 <strong style={{color: 'var(--primary-color)'}}>4-time Hackathon Winner</strong> (Microsoft, Amazon, Meta, W&R SETA) with a track record of delivering high-impact products like Apply4Me (10,000+ users).
+              <strong style={{color: 'var(--primary-color)'}}> 4-time Hackathon Winner</strong> (Microsoft, Amazon, Meta, W&R SETA) with a track record of delivering high-impact products like Apply4Me (10,000+ users).
             </HeroDescription>
-
-            {/* Achievement Badges - Prominently display major accomplishments */}
-            <div style={{ margin: '2rem 0' }}>
-              <AchievementBadges />
-            </div>
 
             <ButtonGroup>
               <Link to="/projects">
@@ -271,6 +266,15 @@ const Home = () => {
           </HeroVisual>
         </HeroContent>
       </HeroSection>
+
+      <Section style={{ padding: '2rem 0', background: 'rgba(0, 122, 255, 0.03)' }}>
+        <div className="container">
+          <SectionSubtitle style={{ marginBottom: '1rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '2px' }}>
+            Professional Recognition & Certifications
+          </SectionSubtitle>
+          <AchievementBadges />
+        </div>
+      </Section>
 
       <Section>
         <SectionTitle>Featured Projects</SectionTitle>
