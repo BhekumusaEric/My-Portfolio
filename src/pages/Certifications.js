@@ -202,6 +202,28 @@ const Certifications = () => {
       verifyUrl: '#' // Would be actual verification URL
     },
     {
+      id: 2,
+      title: 'SAP Database Administrator - SAP Hana',
+      provider: 'SAP',
+      date: '2024',
+      description: 'Professional certification validating expertise in SAP HANA database administration, operations, and management.',
+      skills: ['SAP HANA', 'Database Administration', 'Performance Tuning'],
+      icon: 'DB',
+      bgColor: '#0FAAFF',
+      verifyUrl: '#'
+    },
+    {
+      id: 9,
+      title: 'Huawei ICT Academy Ambassador',
+      provider: 'Huawei',
+      date: '2024',
+      description: 'Serving as an ambassador for the Huawei ICT Academy, promoting technology education and professional development within the student community.',
+      skills: ['Leadership', 'Technology Advocacy', 'Community Engagement'],
+      icon: 'ICT',
+      bgColor: '#FF0000',
+      verifyUrl: '#'
+    },
+    {
       id: 3,
       title: 'Python Programming Certifications',
       provider: 'Cisco Netacad & IBM',

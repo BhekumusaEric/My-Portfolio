@@ -190,6 +190,33 @@ const ExperienceTimeline = ({ experiences = [] }) => {
   const defaultExperiences = [
     {
       id: 1,
+      date: "Apr '26 - Present",
+      title: 'Business Analyst Intern',
+      description: 'Translating business requirements into technical solutions at WesBank FML / FNB. Leading JAD sessions, managing BRS documentation, and supporting Agile project delivery through governance and UAT coordination.',
+      type: 'achievement', // using achievement color for work experience
+      icon: '💼',
+      tags: ['Business Analysis', 'Agile', 'Requirements Gathering', 'Jira', 'Confluence']
+    },
+    {
+      id: 2,
+      date: "Dec '25 - Apr '26",
+      title: 'Project Manager Intern',
+      description: 'Coordinated end-to-end Agile projects at Umuzi.Org. Developed project artifacts (RACI, Gantt charts, WBS), facilitated daily stand-ups, and applied design-thinking methodologies to drive stakeholder collaboration.',
+      type: 'project',
+      icon: '📊',
+      tags: ['Project Management', 'Agile Delivery', 'Design Thinking']
+    },
+    {
+      id: 3,
+      date: "Sep '25 - Dec '25",
+      title: 'Placement Supervisor',
+      description: 'Oversaw students in campus roles at WeThinkCode. Championed community engagement initiatives and acted as the vital link between students and the Project Manager, resulting in a 20% increase in compliance.',
+      type: 'education',
+      icon: '👥',
+      tags: ['Leadership', 'Mentorship', 'Reporting']
+    },
+    {
+      id: 4,
       date: '2024',
       title: 'Sappas Hackathon Winner',
       description: 'Emerged victorious in the prestigious Sappas hackathon competition, demonstrating exceptional problem-solving skills and innovative thinking in a competitive tech environment.',
@@ -198,7 +225,7 @@ const ExperienceTimeline = ({ experiences = [] }) => {
       tags: ['Competition', 'Innovation', 'Problem Solving']
     },
     {
-      id: 2,
+      id: 5,
       date: '2024',
       title: 'Java & C# Skill Expansion',
       description: 'Successfully expanded programming expertise to include enterprise-level Java and C# development, adding significant value to full-stack development capabilities.',
@@ -207,7 +234,7 @@ const ExperienceTimeline = ({ experiences = [] }) => {
       tags: ['Java', 'C#', 'Enterprise Development']
     },
     {
-      id: 3,
+      id: 6,
       date: '2024',
       title: 'Cloud Computing Certifications',
       description: 'Achieved Microsoft Azure Fundamentals and AWS Cloud Practitioner certifications, validating expertise in modern cloud infrastructure and services.',
@@ -216,7 +243,7 @@ const ExperienceTimeline = ({ experiences = [] }) => {
       tags: ['Azure', 'AWS', 'Cloud Architecture']
     },
     {
-      id: 4,
+      id: 7,
       date: '2023-2024',
       title: 'AI/ML Project Portfolio Development',
       description: 'Developed multiple AI and machine learning projects including SafeWayAI, NeuroStrike, and Smart Loan Approval Predictor, showcasing practical AI application skills.',
@@ -225,7 +252,7 @@ const ExperienceTimeline = ({ experiences = [] }) => {
       tags: ['Machine Learning', 'AI Development', 'Python']
     },
     {
-      id: 5,
+      id: 8,
       date: '2023',
       title: 'WeThinkCode_ Enrollment',
       description: 'Accepted into the prestigious WeThinkCode_ software development academy, joining an elite program focused on practical coding skills and industry readiness.',
@@ -234,7 +261,7 @@ const ExperienceTimeline = ({ experiences = [] }) => {
       tags: ['Education', 'Software Development', 'Practical Skills']
     },
     {
-      id: 6,
+      id: 9,
       date: '2023',
       title: 'Full-Stack Development Mastery',
       description: 'Achieved proficiency in full-stack web development using React, Django, and modern web technologies, enabling end-to-end application development.',

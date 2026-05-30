@@ -161,12 +161,46 @@ export const allProjects = [
     id: 2,
     title: 'Smart Loan Approval Predictor',
     slug: 'smart-loan-approval',
-    description: 'A mobile application for Eric Bank System that allows users to apply for loans and get instant approval predictions using machine learning.',
-    technologies: ['Python', 'Kivy', 'Machine Learning', 'SQLite'],
+    description: 'Developed a machine learning web application using Streamlit and Random Forest Classifier to predict loan approval. Integrated explainable AI, input validation, auditing, and visualizations.',
+    technologies: ['Python', 'Streamlit', 'Random Forest', 'Machine Learning', 'Explainable AI'],
     category: 'AI/ML',
     github: 'https://github.com/BhekumusaEric/Smart-Loan-Approval-Predictor',
     demo: 'https://github.com/BhekumusaEric/Smart-Loan-Approval-Predictor',
     image: '/images/projects/loan-approval.jpg'
+  },
+  {
+    id: 105,
+    title: 'Cloud Native Python Flask Micro service',
+    slug: 'cloud-native-flask',
+    description: 'A cloud-native Flask microservices application (API Gateway & Inventory Service) with RESTful APIs, Docker containerization, pushed to AWS ECR. Orchestrated using AWS ECS with ALB and implemented an end-to-end DevOps workflow.',
+    technologies: ['Python', 'Flask', 'Docker', 'AWS ECS', 'RESTful APIs'],
+    category: 'Cloud Development',
+    github: 'https://github.com/BhekumusaEric/',
+    demo: 'https://github.com/BhekumusaEric/',
+    image: '/images/projects/safeway-ai.jpg', // Using a placeholder default image
+    featured: true
+  },
+  {
+    id: 106,
+    title: 'Robots World',
+    slug: 'robots-world',
+    description: 'A client–server game demonstrating Java OOP principles, socket programming, and networking. Implemented TCP-based JSON communication and developed a multithreaded server managing multiple clients.',
+    technologies: ['Java', 'OOP', 'Socket Programming', 'Networking', 'JSON'],
+    category: 'Java Development',
+    github: 'https://github.com/BhekumusaEric/',
+    demo: 'https://github.com/BhekumusaEric/',
+    image: '/images/projects/saaio.jpg' // Using a placeholder default image
+  },
+  {
+    id: 107,
+    title: 'Stock Control Application',
+    slug: 'stock-control',
+    description: 'A comprehensive stock control system using VB.Net, integrating databases to efficiently manage electronic product inventories with sorting and searching algorithms.',
+    technologies: ['VB.Net', '.NET', 'SQL', 'Algorithms'],
+    category: 'Framework',
+    github: 'https://github.com/BhekumusaEric/',
+    demo: 'https://github.com/BhekumusaEric/',
+    image: '/images/projects/dip.jpg' // Using a placeholder default image
   },
   {
     id: 3,

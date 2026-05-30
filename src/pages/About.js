@@ -187,19 +187,19 @@ const About = () => {
             >
               <SectionTitle className="gradient-text">My Story</SectionTitle>
               <Paragraph>
-                I'm Bhekumusa Eric Ntshwenya, a passionate software developer and <strong>4-time hackathon winner</strong> with expertise in Python, automation, and full-stack development. My journey in tech is driven by a desire to solve real-world problems through innovative code and intelligent systems.
+                I'm Bhekumusa Eric Ntshwenya, a passionate software developer and <strong>4-time hackathon winner</strong> with expertise in Python, automation, and enterprise programming. My journey in tech is driven by a desire to solve real-world problems through innovative code and intelligent systems.
               </Paragraph>
               <Paragraph>
                 I've successfully built and launched projects like <strong>Apply4Me</strong>, an automation platform that has served over 10,000 users, and <strong>SAAIO Training Grounds</strong>, an interactive AI education platform for international olympiad students.
               </Paragraph>
               <Paragraph>
+                Currently, I am working as a <strong>Business Analyst Intern at WesBank FML</strong>, where I translate business requirements into technical solutions and support Agile project delivery. Previously, I served as a <strong>Project Manager Intern at Umuzi.Org</strong> and a <strong>Placement Supervisor at WeThinkCode</strong>.
+              </Paragraph>
+              <Paragraph>
                 My competitive success includes 1st place wins at the <strong>Microsoft SAPPAS</strong>, <strong>Amazon Q</strong>, <strong>Meta LLAMA</strong>, and <strong>W&R SETA</strong> hackathons. These experiences have honed my ability to innovate under pressure and deliver high-impact solutions.
               </Paragraph>
               <Paragraph>
-                Currently, I am proficient in Python and have a solid foundation in Java and C# development. While I am still growing my professional experience in Machine Learning, I am passionate about applying AI concepts to create meaningful tools and platforms.
-              </Paragraph>
-              <Paragraph>
-                Beyond coding, I'm committed to continuous learning and professional growth. My recent certifications in cloud computing and expansion into Java and C# development demonstrate my dedication to staying at the forefront of technology trends and industry best practices.
+                Beyond coding, I'm committed to continuous learning and professional growth. My recent certifications in cloud computing, SAP Database Administration, and expansion into Java and C# development demonstrate my dedication to staying at the forefront of technology trends and industry best practices.
               </Paragraph>
             </motion.div>
           </Column>
@@ -242,7 +242,7 @@ const About = () => {
 
               <InfoCard>
                 <InfoTitle>Focus Areas</InfoTitle>
-                <InfoContent>AI/ML Development, Enterprise Java/C#, Cloud Computing, Full-Stack Development</InfoContent>
+                <InfoContent>AI/ML Development, Enterprise Programming, SAP HANA, Project Management</InfoContent>
               </InfoCard>
 
               <InfoCard>
@@ -252,7 +252,7 @@ const About = () => {
 
               <InfoCard>
                 <InfoTitle>Programming Languages</InfoTitle>
-                <InfoContent>Python (Proficient), JavaScript, Java (Good), C# (Beginner)</InfoContent>
+                <InfoContent>Python (Proficient), JavaScript, Java (Good), C# (Beginner), VB.Net</InfoContent>
               </InfoCard>
 
               <InfoCard>
@@ -262,7 +262,7 @@ const About = () => {
 
               <InfoCard>
                 <InfoTitle>Certifications</InfoTitle>
-                <InfoContent>SAP Tech Consultant, Cisco CCNA, Cisco IT Essentials A+</InfoContent>
+                <InfoContent>SAP Database Administrator - SAP Hana, SAP Tech Consultant, Cisco CCNA, Cisco IT Essentials A+</InfoContent>
               </InfoCard>
 
               <InfoCard>
