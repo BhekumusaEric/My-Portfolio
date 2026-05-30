@@ -447,8 +447,9 @@ const Contact = () => {
 
                 <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                   <motion.a
-                    href={process.env.PUBLIC_URL + "/static/ats-resume.html"}
+                    href={process.env.PUBLIC_URL + "/Bhekumusa_Ntshwenya.pdf"}
                     target="_blank"
+                    download="Bhekumusa_Ntshwenya.pdf"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     style={{ display: 'inline-flex', alignItems: 'center', color: 'var(--primary-color)' }}
@@ -458,23 +459,8 @@ const Contact = () => {
                       <polyline points="7 10 12 15 17 10"></polyline>
                       <line x1="12" y1="15" x2="12" y2="3"></line>
                     </svg>
-                    ATS-Friendly Resume
+                    Download Resume (.pdf)
                   </motion.a>
-
-                    <motion.a
-                      href={process.env.PUBLIC_URL + "/resume.docx"}
-                      download
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      style={{ display: 'inline-flex', alignItems: 'center', color: 'var(--primary-color)' }}
-                    >
-                      <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '0.5rem' }}>
-                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                        <polyline points="7 10 12 15 17 10"></polyline>
-                        <line x1="12" y1="15" x2="12" y2="3"></line>
-                      </svg>
-                      Download Resume (.docx)
-                    </motion.a>
                 </div>
               </InfoCard>
             </motion.div>
